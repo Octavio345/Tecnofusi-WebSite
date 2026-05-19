@@ -3,8 +3,8 @@ import { Credibility } from "@/sections/Credibility";
 import { Differentials } from "@/sections/Differentials";
 import { Hero } from "@/sections/Hero";
 import { Marketplaces } from "@/sections/Marketplaces";
+import { OperationsGallery } from "@/sections/OperationsGallery";
 import { Services } from "@/sections/Services";
-import { Suppliers } from "@/sections/Suppliers";
 
 export default function HomePage() {
   return (
@@ -12,10 +12,10 @@ export default function HomePage() {
       <Hero />
       <Differentials />
       <Services />
+      <OperationsGallery />
       <About compact />
       <Credibility />
       <Marketplaces />
-      <Suppliers />
     </main>
   );
 }

@@ -20,7 +20,7 @@ export function About({ compact = false }: { compact?: boolean }) {
             <AnimatedSection>
               <SectionHeading
                 eyebrow="Quem somos"
-                title="Uma base industrial criada para entregar precisão, prazo e parceria técnica."
+                title="Uma base industrial criada para entregar precisão, prazo e suporte técnico."
                 description="Desde 2011, a Tecnofusi atua em fundição de alumínio, usinagem CNC e desenvolvimento de soluções especiais para demandas industriais."
               />
               <div className="mt-8">
@@ -88,7 +88,7 @@ export function About({ compact = false }: { compact?: boolean }) {
               className="relative min-h-[360px] bg-graphite-950 bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "linear-gradient(180deg, rgba(7,8,10,0.06), rgba(7,8,10,0.82)), url('/images/fachada-tecnofusi.jpg')"
+                  "linear-gradient(180deg, rgba(7,8,10,0.06), rgba(7,8,10,0.82)), url('/images/site/fachada-tecnofusi.jpg')"
               }}
             >
               <div

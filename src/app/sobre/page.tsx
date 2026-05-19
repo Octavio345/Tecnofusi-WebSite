@@ -15,7 +15,7 @@ export default function SobrePage() {
       <PageHero
         eyebrow="Empresa"
         title="Uma indústria técnica, séria e orientada por resultado."
-        description="A Tecnofusi consolidou sua atuação em serviços industriais com eficiência, ética, qualidade e parceria no desenvolvimento de soluções."
+        description="A Tecnofusi consolidou sua atuação em serviços industriais com eficiência, ética, qualidade e desenvolvimento técnico de soluções."
       />
       <About />
       <Credibility />

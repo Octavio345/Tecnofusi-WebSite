@@ -88,7 +88,7 @@ export const services = [
     icon: Drill,
     title: "Desenvolvimento técnico",
     description:
-      "Parceria para aprimorar processos, adaptar componentes e viabilizar novos projetos de fundição, usinagem e ferramental.",
+      "Apoio técnico para aprimorar processos, adaptar componentes e viabilizar novos projetos de fundição, usinagem e ferramental.",
     bullets: ["Análise de viabilidade", "Apoio ao projeto", "Melhoria de processo"]
   }
 ];
@@ -114,7 +114,7 @@ export const differentiators = [
   },
   {
     icon: Handshake,
-    title: "Parceria consultiva",
+    title: "Atendimento consultivo",
     description:
       "Atendimento próximo para entender aplicação, material, tolerância e contexto real de uso."
   }

@@ -10,7 +10,7 @@ export function Differentials() {
           <SectionHeading
             eyebrow="Diferenciais"
             title="O que sustenta uma entrega industrial confiável?"
-            description="Prazo, qualidade, capacidade produtiva e parceria técnica precisam aparecer antes da proposta comercial. É isso que reduz risco para quem compra serviços industriais."
+            description="Prazo, qualidade, capacidade produtiva e suporte técnico precisam aparecer antes da proposta comercial. É isso que reduz risco para quem compra serviços industriais."
           />
         </AnimatedSection>
 

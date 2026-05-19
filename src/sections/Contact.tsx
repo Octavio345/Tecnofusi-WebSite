@@ -16,7 +16,7 @@ export function Contact() {
           <SectionHeading
             eyebrow="Contato"
             title="Pronto para discutir uma peça, lote ou solução técnica?"
-            description="Entre em contato para orçamento, viabilidade, parceria produtiva ou desenvolvimento sob demanda."
+            description="Entre em contato para orçamento, viabilidade produtiva ou desenvolvimento sob demanda."
           />
         </AnimatedSection>
 
