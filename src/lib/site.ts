@@ -67,29 +67,81 @@ export const services = [
     icon: Factory,
     title: "Fundição de alumínio",
     description:
-      "Peças fundidas por gravidade em alumínio com controle técnico, estabilidade dimensional e foco em qualidade uniforme.",
-    bullets: ["Ligas de alumínio", "Projetos terceirizados", "Peças sob demanda"]
+      "Produção de peças fundidas por gravidade em alumínio para serviços terceirizados, com controle técnico, qualidade uniforme e foco em capacidade produtiva.",
+    bullets: ["Alumínio por gravidade", "Serviços terceirizados", "Qualidade uniforme"],
+    details:
+      "As ligas modernas de alumínio permitem atender diferentes exigências mecânicas, térmicas e dimensionais. Com controle adequado de processo, é possível produzir peças em escala mantendo estabilidade e repetibilidade.",
+    highlights: [
+      "Baixa densidade e redução de peso",
+      "Boa condutividade térmica e elétrica",
+      "Resistência à corrosão",
+      "Boa usinabilidade e acabamento",
+      "Absorção de vibração",
+      "Fácil reciclagem"
+    ],
+    technicalPoints: [
+      "Baixa temperatura de fusão",
+      "Forte tendência à oxidação controlada no processo",
+      "Alto coeficiente de dilatação",
+      "Boa estabilidade de forma quando bem projetado"
+    ]
   },
   {
     icon: Cpu,
     title: "Usinagem industrial CNC",
     description:
-      "Usinagem para pequenos e médios lotes, com tornos CNC, centros de usinagem e processos orientados por precisão.",
-    bullets: ["Tornos CNC", "Centros verticais e horizontais", "Medição tridimensional"]
+      "Serviços de usinagem industrial para pequenos e médios lotes, com soluções inteligentes, precisão dimensional e melhor custo-benefício.",
+    bullets: ["Tornos CNC", "Centros CNC", "Medição tridimensional"],
+    details:
+      "O parque fabril conta com 35 equipamentos instalados, incluindo tornos CNC, centros de usinagem vertical e horizontal CNC, máquinas de medição tridimensional e recursos de apoio para demandas técnicas.",
+    highlights: [
+      "Pinos, buchas e eixos",
+      "Suportes, mancais e flanges",
+      "Carcaças, tampas e tubagens",
+      "Porcas, parafusos e componentes especiais",
+      "Pequenos e médios lotes",
+      "Controle dimensional"
+    ],
+    segments: [
+      "Máquinas agrícolas e implementos",
+      "Peças automotivas",
+      "Energia eólica",
+      "Equipamentos diversos"
+    ]
   },
   {
     icon: Wrench,
     title: "Ferramentas para motocicletas",
     description:
-      "Desenvolvimento de ferramentas e equipamentos especiais para oficinas, manutenção e aplicações técnicas no setor de motocicletas.",
-    bullets: ["Equipamentos especiais", "Soluções de melhoria", "Projetos consultivos"]
+      "Desenvolvimento de ferramentas e equipamentos especiais para motocicletas, com foco em inovação, melhoria de produto e aplicação prática em oficina.",
+    bullets: ["Equipamentos especiais", "Melhoria de produto", "Aplicação em oficina"],
+    details:
+      "A linha de motocicletas nasceu da busca por soluções específicas para manutenção, montagem e apoio técnico. O objetivo é transformar problemas recorrentes de oficina em ferramentas mais funcionais, resistentes e fáceis de usar.",
+    highlights: [
+      "Ferramentas especiais",
+      "Equipamentos de apoio",
+      "Soluções sob demanda",
+      "Melhorias para manutenção",
+      "Produtos para uso técnico",
+      "Desenvolvimento contínuo"
+    ]
   },
   {
     icon: Drill,
     title: "Desenvolvimento técnico",
     description:
       "Apoio técnico para aprimorar processos, adaptar componentes e viabilizar novos projetos de fundição, usinagem e ferramental.",
-    bullets: ["Análise de viabilidade", "Apoio ao projeto", "Melhoria de processo"]
+    bullets: ["Análise de viabilidade", "Apoio ao projeto", "Melhoria de processo"],
+    details:
+      "Atendimento voltado para entender aplicação, material, tolerância, volume e contexto de uso antes da produção. Essa leitura técnica reduz retrabalho e ajuda a escolher o processo mais adequado.",
+    highlights: [
+      "Análise de aplicação",
+      "Apoio na escolha do processo",
+      "Adaptação de componentes",
+      "Viabilidade produtiva",
+      "Orientação por custo-benefício",
+      "Desenvolvimento sob demanda"
+    ]
   }
 ];
 
