@@ -6,8 +6,8 @@ import styles from "./IntroAnimation.module.css";
 
 const LEAVE_DELAY   = 5500;
 const UNMOUNT_DELAY = 6600;
-const LOGO_SRC          = "/images/tecnofusi-logo-animation.png";
-const FALLBACK_LOGO_SRC = "/images/tecnofusi-logo.png";
+const LOGO_SRC          = "/images/tecnofusi-logo-animation.webp";
+const FALLBACK_LOGO_SRC = "/images/tecnofusi-logo.webp";
 
 const SPARKS = [
   { tx: "-105px", ty: "-115px", color: "#ff4b55", size: 7, dur: "0.85s", delay: "0.58s" },

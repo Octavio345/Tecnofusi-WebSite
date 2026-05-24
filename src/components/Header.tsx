@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -18,16 +18,17 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header
-      className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled
-          ? "border-b border-white/10 bg-graphite-950/78 shadow-premium backdrop-blur-2xl"
-          : "bg-transparent"
-      )}
-    >
-      <div className="container-premium flex h-[var(--header-height)] items-center justify-between">
-        <Logo />
+    <LazyMotion features={domAnimation} strict>
+      <header
+        className={cn(
+          "fixed inset-x-0 top-0 z-50 transition-all duration-300",
+          scrolled
+            ? "border-b border-white/10 bg-graphite-950/78 shadow-premium backdrop-blur-2xl"
+            : "bg-transparent"
+        )}
+      >
+        <div className="container-premium flex h-[var(--header-height)] items-center justify-between">
+          <Logo />
 
         <nav
           className="hidden items-center gap-1 rounded-full border border-white/10 bg-white/[0.045] p-1 backdrop-blur-xl lg:flex"
@@ -48,7 +49,7 @@ export function Header() {
                 )}
               >
                 {active && (
-                  <motion.span
+                  <m.span
                     layoutId="active-nav-pill"
                     className="absolute inset-0 rounded-full bg-brand-bright shadow-red-glow"
                     transition={{
@@ -107,7 +108,7 @@ export function Header() {
                   onClick={() => setOpen(false)}
                 >
                   {active && (
-                    <motion.span
+                    <m.span
                       layoutId="active-mobile-nav-pill"
                       className="absolute inset-0 rounded-xl bg-brand-bright shadow-red-glow"
                       transition={{
@@ -129,7 +130,8 @@ export function Header() {
             </Button>
           </nav>
         </div>
-      </div>
-    </header>
+        </div>
+      </header>
+    </LazyMotion>
   );
 }

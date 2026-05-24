@@ -12,7 +12,7 @@ const marketplaceItems = [
     description:
       "Site oficial da Tecnofusi com catálogo completo de produtos, fundidos e linha de motocicletas.",
     href: siteConfig.marketplaces.loja,
-    logoSrc: "/images/tecnofusi-logo.png",
+    logoSrc: "/images/tecnofusi-logo.webp",
     logoFallback: "Tecnofusi",
     tone: "tecnofusi" as const
   },
@@ -30,7 +30,7 @@ const marketplaceItems = [
     description:
       "Canal de venda online para encontrar produtos Tecnofusi com compra rápida.",
     href: siteConfig.marketplaces.shopee,
-    logoSrc: "/images/marketplaces/shopee.png",
+    logoSrc: "/images/marketplaces/shopee.webp",
     logoFallback: "Shopee",
     tone: "shopee" as const
   }
@@ -83,8 +83,6 @@ function MarketplaceLogo({
             fill
             sizes="62px"
             className="object-contain"
-            quality={100}
-            priority
           />
         </div>
       ) : (

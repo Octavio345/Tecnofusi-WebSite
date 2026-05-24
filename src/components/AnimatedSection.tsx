@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
+import { LazyMotion, domAnimation, m, type Variants } from "framer-motion";
 import { fadeUp } from "@/animations/variants";
 import { cn } from "@/utils/cn";
 
@@ -19,18 +19,20 @@ export function AnimatedSection({
   as = "section",
   variants = fadeUp
 }: AnimatedSectionProps) {
-  const Component = as === "section" ? motion.section : motion.div;
+  const Component = as === "section" ? m.section : m.div;
 
   return (
-    <Component
-      id={id}
-      className={cn(className)}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
-      variants={variants}
-    >
-      {children}
-    </Component>
+    <LazyMotion features={domAnimation} strict>
+      <Component
+        id={id}
+        className={cn(className)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-80px" }}
+        variants={variants}
+      >
+        {children}
+      </Component>
+    </LazyMotion>
   );
 }

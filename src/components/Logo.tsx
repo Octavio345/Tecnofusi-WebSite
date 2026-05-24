@@ -14,13 +14,12 @@ export function Logo({ className }: LogoProps) {
       aria-label="Tecnofusi"
     >
       <Image
-        src="/images/tecnofusi-logo-animation.png"
+        src="/images/tecnofusi-logo-animation.webp"
         alt="Tecnofusi"
         width={1323}
         height={743}
         className="h-40 w-auto translate-y-2 sm:h-48"
         priority
-        quality={100}
         sizes="500px"
       />
     </Link>

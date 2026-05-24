@@ -1,12 +1,10 @@
 "use client";
 
 import { Send } from "lucide-react";
-import { FormEvent, useState } from "react";
+import { FormEvent } from "react";
 import { siteConfig } from "@/lib/site";
 
 export function ContactForm() {
-  const [status, setStatus] = useState("");
-
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -62,7 +60,6 @@ export function ContactForm() {
         Enviar mensagem
         <Send className="h-4 w-4" />
       </button>
-      {status && <p className="mt-4 text-sm text-metal-300">{status}</p>}
     </form>
   );
 }

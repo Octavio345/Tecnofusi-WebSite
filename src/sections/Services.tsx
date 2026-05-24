@@ -5,6 +5,14 @@ import { Button } from "@/components/Button";
 import { SectionHeading } from "@/components/SectionHeading";
 import { services } from "@/lib/site";
 
+type ServiceDetailListKey = "technicalPoints" | "segments" | "highlights";
+type ServiceWithOptionalLists = (typeof services)[number] &
+  Partial<Record<ServiceDetailListKey, string[]>>;
+
+function getServiceList(service: ServiceWithOptionalLists, key: ServiceDetailListKey) {
+  return service[key];
+}
+
 export function Services({ showIntro = true }: { showIntro?: boolean }) {
   const showDetails = !showIntro;
 
@@ -67,12 +75,12 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
 
         {showDetails && (
           <div className="mt-14 grid gap-5">
-            {services.map((service) => {
+            {services.map((service: ServiceWithOptionalLists) => {
               const Icon = service.icon;
-              const hasDetailsContent =
-                ("technicalPoints" in service && service.technicalPoints) ||
-                ("segments" in service && service.segments) ||
-                ("highlights" in service && service.highlights);
+              const technicalPoints = getServiceList(service, "technicalPoints");
+              const segments = getServiceList(service, "segments");
+              const highlights = getServiceList(service, "highlights");
+              const hasDetailsContent = Boolean(technicalPoints || segments || highlights);
 
               return (
                 <AnimatedSection
@@ -94,7 +102,7 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
 
                     {hasDetailsContent && (
                     <div className="grid gap-5 p-6 sm:p-8">
-                      {"technicalPoints" in service && service.technicalPoints && (
+                      {technicalPoints && (
                         <div>
                           <div className="flex items-center gap-3">
                             <ListChecks className="h-5 w-5 text-brand-soft" />
@@ -104,7 +112,7 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
                           </div>
 
                           <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                            {service.technicalPoints.map((item) => (
+                            {technicalPoints.map((item) => (
                               <div
                                 key={item}
                                 className="rounded-2xl border border-white/10 bg-graphite-950/55 p-4 text-sm leading-6 text-metal-200"
@@ -116,7 +124,7 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
                         </div>
                       )}
 
-                      {"segments" in service && service.segments && (
+                      {segments && (
                         <div>
                           <div className="flex items-center gap-3">
                             <ListChecks className="h-5 w-5 text-brand-soft" />
@@ -126,7 +134,7 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
                           </div>
 
                           <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                            {service.segments.map((item) => (
+                            {segments.map((item) => (
                               <div
                                 key={item}
                                 className="rounded-2xl border border-white/10 bg-graphite-950/55 p-4 text-sm leading-6 text-metal-200"
@@ -138,7 +146,7 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
                         </div>
                       )}
 
-                      {"highlights" in service && service.highlights && (
+                      {highlights && (
                         <div>
                           <div className="flex items-center gap-3">
                             <CheckCircle2 className="h-5 w-5 text-brand-soft" />
@@ -148,7 +156,7 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
                           </div>
 
                           <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                            {service.highlights.map((item) => (
+                            {highlights.map((item) => (
                               <div
                                 key={item}
                                 className="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.035] p-4"

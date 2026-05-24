@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 import {
   ArrowUpRight,
   CircuitBoard,
@@ -72,18 +72,19 @@ export function Hero() {
       <TechBackground />
 
       <div className="relative z-10 mx-auto w-full max-w-[1520px] px-4 pb-12 pt-3 sm:px-6 lg:px-4 lg:pb-24 lg:pt-6">
-        <motion.div
-          className="premium-border relative w-full overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.035] px-4 py-7 shadow-premium backdrop-blur-xl sm:rounded-[32px] sm:px-8 sm:py-10 lg:px-12 lg:py-12 xl:px-14"
-          variants={staggerContainer}
-          initial="hidden"
-          animate="visible"
-        >
+        <LazyMotion features={domAnimation} strict>
+          <m.div
+            className="premium-border relative w-full overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.035] px-4 py-7 shadow-premium backdrop-blur-xl sm:rounded-[32px] sm:px-8 sm:py-10 lg:px-12 lg:py-12 xl:px-14"
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+          >
           <div className="absolute inset-0 bg-tech-grid bg-[size:42px_42px] opacity-[0.13]" aria-hidden="true" />
           <div className="absolute left-0 top-0 h-full w-1/3 bg-brand-deep/12 blur-3xl" aria-hidden="true" />
           <div className="absolute right-0 top-0 h-full w-1/3 bg-signal-cyan/8 blur-3xl" aria-hidden="true" />
 
           <div className="relative grid min-w-0 items-center gap-8 lg:grid-cols-[minmax(0,1.12fr)_minmax(430px,0.88fr)] xl:gap-12">
-            <motion.div variants={fadeUp} className="min-w-0 max-w-[880px]">
+            <m.div variants={fadeUp} className="min-w-0 max-w-[880px]">
               <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-white/12 bg-white/[0.06] px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-metal-100 backdrop-blur-xl sm:text-xs sm:tracking-[0.18em]">
                 <CircuitBoard className="h-4 w-4 shrink-0 text-brand-soft" />
                 <span className="truncate">Tecnologia industrial aplicada</span>
@@ -134,9 +135,9 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
 
-            <motion.div variants={fadeUp} className="relative hidden lg:block">
+            <m.div variants={fadeUp} className="relative hidden lg:block">
               <div className="premium-border relative overflow-hidden rounded-[30px] bg-white/[0.055] p-4 shadow-premium backdrop-blur-xl">
                 <div className="relative overflow-hidden rounded-[22px] border border-white/10 bg-graphite-950 p-5">
                   <div className="absolute inset-0 bg-tech-grid bg-[size:34px_34px] opacity-25" />
@@ -157,12 +158,11 @@ export function Hero() {
                     <div className="mt-5 flex items-center gap-4 rounded-3xl border border-white/10 bg-white/[0.045] p-4">
                       <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full">
                         <Image
-                          src="/images/tecnofusi-logo.png"
+                          src="/images/tecnofusi-logo.webp"
                           alt="Logo Tecnofusi"
                           fill
                           sizes="64px"
                           className="scale-[1.78] object-cover object-center"
-                          priority
                         />
                       </div>
 
@@ -217,27 +217,28 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           </div>
-        </motion.div>
+          </m.div>
 
-        <motion.div
-          className="mt-6 grid gap-3 sm:mt-8 sm:grid-cols-2 lg:grid-cols-4"
-          variants={staggerContainer}
-          initial="hidden"
-          animate="visible"
-        >
-          {stats.map((item) => (
-            <motion.div
-              key={item.label}
-              variants={fadeUp}
-              className="rounded-2xl border border-white/10 bg-white/[0.045] p-4 backdrop-blur-xl sm:p-5"
-            >
-              <strong className="block text-2xl font-semibold text-white sm:text-3xl">{item.value}</strong>
-              <span className="mt-2 block text-sm leading-6 text-metal-300">{item.label}</span>
-            </motion.div>
-          ))}
-        </motion.div>
+          <m.div
+            className="mt-6 grid gap-3 sm:mt-8 sm:grid-cols-2 lg:grid-cols-4"
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+          >
+            {stats.map((item) => (
+              <m.div
+                key={item.label}
+                variants={fadeUp}
+                className="rounded-2xl border border-white/10 bg-white/[0.045] p-4 backdrop-blur-xl sm:p-5"
+              >
+                <strong className="block text-2xl font-semibold text-white sm:text-3xl">{item.value}</strong>
+                <span className="mt-2 block text-sm leading-6 text-metal-300">{item.label}</span>
+              </m.div>
+            ))}
+          </m.div>
+        </LazyMotion>
       </div>
     </section>
   );
