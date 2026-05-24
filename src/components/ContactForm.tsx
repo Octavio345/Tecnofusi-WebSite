@@ -15,12 +15,23 @@ export function ContactForm() {
     const telefone = String(data.get("telefone") || "");
     const assunto = String(data.get("assunto") || "");
     const mensagem = String(data.get("mensagem") || "");
-    const body = encodeURIComponent(
-      `Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nAssunto: ${assunto}\n\nMensagem:\n${mensagem}`
-    );
+    const text = [
+      "Olá, equipe Tecnofusi.",
+      "",
+      "Estou entrando em contato pelo site e gostaria de solicitar atendimento.",
+      "",
+      `Nome: ${nome}`,
+      `E-mail: ${email}`,
+      `Telefone: ${telefone || "Não informado"}`,
+      `Assunto: ${assunto}`,
+      "",
+      "Descrição da demanda:",
+      mensagem
+    ].join("\n");
+    const whatsappUrl = new URL(siteConfig.whatsappHref);
 
-    window.location.href = `mailto:${siteConfig.email}?subject=${encodeURIComponent(`Contato pelo site - ${assunto || nome}`)}&body=${body}`;
-    setStatus("Seu aplicativo de e-mail foi aberto com a mensagem preenchida.");
+    whatsappUrl.searchParams.set("text", text);
+    window.open(whatsappUrl.toString(), "_blank", "noopener,noreferrer");
   }
 
   return (
@@ -45,7 +56,7 @@ export function ContactForm() {
       </div>
       <label className="mt-4 grid gap-2 text-sm font-medium text-metal-100">
         Mensagem
-        <textarea name="mensagem" required rows={5} className="focus-ring resize-none rounded-2xl border border-white/10 bg-graphite-950/70 px-4 py-3 text-white outline-none transition placeholder:text-metal-500 focus:border-brand-bright" placeholder="Conte o que você precisa desenvolver, fundir ou usinar." />
+        <textarea name="mensagem" required rows={5} className="focus-ring resize-none rounded-2xl border border-white/10 bg-graphite-950/70 px-4 py-3 text-white outline-none transition placeholder:text-metal-500 focus:border-brand-bright" placeholder="Conte o que você precisa desenvolver ou fundir." />
       </label>
       <button className="focus-ring mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-brand-bright px-5 text-sm font-semibold text-white shadow-redGlow transition duration-300 hover:-translate-y-0.5 hover:bg-brand-soft sm:w-auto" type="submit">
         Enviar mensagem

@@ -9,9 +9,9 @@ type PageHeroProps = {
 
 export function PageHero({ eyebrow, title, description }: PageHeroProps) {
   return (
-    <section className="relative isolate overflow-hidden pt-[calc(var(--header-height)+56px)]">
+    <section className="relative isolate overflow-hidden pt-[calc(var(--header-height)+20px)]">
       <TechBackground />
-      <div className="container-premium relative z-10 py-16 lg:py-28">
+      <div className="container-premium relative z-10 pb-16 pt-8 lg:pb-28 lg:pt-14">
         {/* w-full garante que max-w-4xl funcione corretamente em todos os breakpoints */}
         <AnimatedSection className="w-full max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-brand-soft">

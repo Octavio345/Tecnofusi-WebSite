@@ -17,15 +17,17 @@ import {
   Wrench
 } from "lucide-react";
 
+const whatsappHref =
+  "https://wa.me/5519981359252?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Tecnofusi%20e%20gostaria%20de%20solicitar%20um%20atendimento.";
+
 export const siteConfig = {
   name: "Tecnofusi",
   url: "https://tecnofusi.com.br",
   description:
-    "Fundição de alumínio, usinagem CNC e desenvolvimento de ferramentas especiais para demandas industriais.",
+    "Fundição de alumínio coquilhado e desenvolvimento de ferramentas especiais para demandas industriais.",
   phonePrimary: "(19) 3455-5329",
-  whatsapp: "(19) 99348-2165",
-  whatsappHref:
-    "https://wa.me/5519993482165?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Tecnofusi%20e%20gostaria%20de%20solicitar%20um%20atendimento.",
+  whatsapp: "(19) 98135-9252",
+  whatsappHref,
   email: "tecnofusi@tecnofusi.com.br",
   address: "Rua Bárbara Rosa Vital, 129 - Condomínio Cintec - Santa Bárbar d Oeste/SP - 13459-626",
   mapsQuery:
@@ -36,8 +38,7 @@ export const siteConfig = {
     facebookFundidos: "https://www.facebook.com/tecnofusifundidos",
     facebookMotocicletas: "https://www.facebook.com/tecnofusimotocicletas",
     youtube: "https://www.youtube.com/@edvaldogallina9902",
-    whatsapp:
-      "https://wa.me/5519993482165?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Tecnofusi%20e%20gostaria%20de%20solicitar%20um%20atendimento."
+    whatsapp: whatsappHref
   },
   marketplaces: {
     loja: "https://lojatecnofusi.com.br/",
@@ -57,57 +58,43 @@ export const navItems = [
 
 export const stats = [
   { value: "2011", label: "Fundação e início das operações" },
-  { value: "35+", label: "Equipamentos no parque fabril" },
-  { value: "3", label: "Frentes técnicas principais" },
-  { value: "B2B", label: "Atendimento industrial e terceirizado" }
+  { value: "B2B", label: "Atendimento industrial para empresas" },
+  { value: "2", label: "Frentes principais: fundição e ferramentas" },
+  { value: "BR", label: "Atendimento para empresas em todo o Brasil" }
 ];
 
 export const services = [
   {
     icon: Factory,
-    title: "Fundição de alumínio",
+    title: "Fundição de alumínio coquilhado",
     description:
-      "Produção de peças fundidas por gravidade em alumínio para serviços terceirizados, com controle técnico, qualidade uniforme e foco em capacidade produtiva.",
-    bullets: ["Alumínio por gravidade", "Serviços terceirizados", "Qualidade uniforme"],
+      "Produção de peças em alumínio coquilhado para serviços terceirizados, com controle técnico, qualidade uniforme e foco em capacidade produtiva.",
+    bullets: ["Alumínio coquilhado", "Serviços terceirizados", "Qualidade uniforme"],
     details:
-      "As ligas modernas de alumínio permitem atender diferentes exigências mecânicas, térmicas e dimensionais. Com controle adequado de processo, é possível produzir peças em escala mantendo estabilidade e repetibilidade.",
+      "Razões técnicas para escolher peças fundidas em alumínio: leveza, resistência, estabilidade dimensional e viabilidade produtiva. Com controle adequado de processo, é possível produzir peças em escala mantendo qualidade e repetibilidade.",
     highlights: [
       "Baixa densidade e redução de peso",
       "Boa condutividade térmica e elétrica",
       "Resistência à corrosão",
       "Boa usinabilidade e acabamento",
-      "Absorção de vibração",
+      "Flexibilidade no desenvolvimento de peças",
       "Fácil reciclagem"
     ],
     technicalPoints: [
-      "Baixa temperatura de fusão",
-      "Forte tendência à oxidação controlada no processo",
-      "Alto coeficiente de dilatação",
-      "Boa estabilidade de forma quando bem projetado"
+      "Estabilidade dimensional",
+      "Acabamento superficial superior",
+      "Repetibilidade em produção seriada",
+      "Boa resistência mecânica"
     ]
   },
   {
     icon: Cpu,
-    title: "Usinagem industrial CNC",
+    title: "Apoio de usinagem do grupo",
     description:
-      "Serviços de usinagem industrial para pequenos e médios lotes, com soluções inteligentes, precisão dimensional e melhor custo-benefício.",
-    bullets: ["Tornos CNC", "Centros CNC", "Medição tridimensional"],
+      "Quando necessário, a Tecnofusi conta com suporte de usinagem CNC por meio de empresa parceira do mesmo grupo empresarial.",
+    bullets: ["Empresa parceira", "Mesmo grupo empresarial", "Apoio complementar"],
     details:
-      "O parque fabril conta com 35 equipamentos instalados, incluindo tornos CNC, centros de usinagem vertical e horizontal CNC, máquinas de medição tridimensional e recursos de apoio para demandas técnicas.",
-    highlights: [
-      "Pinos, buchas e eixos",
-      "Suportes, mancais e flanges",
-      "Carcaças, tampas e tubagens",
-      "Porcas, parafusos e componentes especiais",
-      "Pequenos e médios lotes",
-      "Controle dimensional"
-    ],
-    segments: [
-      "Máquinas agrícolas e implementos",
-      "Peças automotivas",
-      "Energia eólica",
-      "Equipamentos diversos"
-    ]
+      "Quando necessário, a Tecnofusi conta com suporte de usinagem CNC por meio de empresa parceira do mesmo grupo empresarial."
   },
   {
     icon: Wrench,
@@ -130,7 +117,7 @@ export const services = [
     icon: Drill,
     title: "Desenvolvimento técnico",
     description:
-      "Apoio técnico para aprimorar processos, adaptar componentes e viabilizar novos projetos de fundição, usinagem e ferramental.",
+      "Atuamos no apoio técnico ao desenvolvimento de peças e soluções industriais, auxiliando na adaptação de componentes, melhoria de processos e viabilidade produtiva para projetos em alumínio fundido e ferramental.",
     bullets: ["Análise de viabilidade", "Apoio ao projeto", "Melhoria de processo"],
     details:
       "Atendimento voltado para entender aplicação, material, tolerância, volume e contexto de uso antes da produção. Essa leitura técnica reduz retrabalho e ajuda a escolher o processo mais adequado.",
@@ -195,7 +182,7 @@ export const timeline = [
     year: "Hoje",
     title: "Indústria orientada por precisão",
     description:
-      "Atuação integrada em fundição de alumínio, usinagem CNC e desenvolvimento técnico sob demanda."
+      "Atuação focada em fundição de alumínio coquilhado, ferramentas para motocicletas e desenvolvimento técnico sob demanda."
   }
 ];
 

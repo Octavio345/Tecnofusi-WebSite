@@ -17,23 +17,22 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Tecnofusi | Fundição, usinagem CNC e soluções industriais",
+    default: "Tecnofusi | Fundição de alumínio e soluções industriais",
     template: "%s | Tecnofusi"
   },
   description:
-    "Tecnofusi: fundição de alumínio por gravidade, usinagem industrial CNC e desenvolvimento de ferramentas especiais com qualidade, prazo e precisão técnica.",
+    "Tecnofusi: fundição de alumínio coquilhado e desenvolvimento de ferramentas especiais com qualidade, prazo e precisão técnica.",
   keywords: [
     "Tecnofusi",
+    "fundição de alumínio coquilhado",
     "fundição de alumínio",
-    "usinagem CNC",
-    "usinagem industrial",
     "ferramentas para motocicletas",
     "Santa Bárbara D'Oeste"
   ],
   openGraph: {
     title: "Tecnofusi | Soluções industriais de precisão",
     description:
-      "Fundição, usinagem e desenvolvimento técnico para empresas que precisam de qualidade, prazo e confiabilidade.",
+      "Fundição de alumínio coquilhado e desenvolvimento técnico para empresas que precisam de qualidade, prazo e confiabilidade.",
     url: siteConfig.url,
     siteName: "Tecnofusi",
     locale: "pt_BR",
@@ -51,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tecnofusi | Soluções industriais de precisão",
     description:
-      "Fundição de alumínio, usinagem CNC e ferramentas especiais com padrão técnico elevado.",
+      "Fundição de alumínio coquilhado e ferramentas especiais com padrão técnico elevado.",
     images: ["/images/tecnofusi-logo.png"]
   },
   alternates: {

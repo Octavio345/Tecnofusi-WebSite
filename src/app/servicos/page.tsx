@@ -5,7 +5,7 @@ import { Services } from "@/sections/Services";
 export const metadata: Metadata = {
   title: "Serviços",
   description:
-    "Fundição de alumínio, usinagem CNC, ferramentas para motocicletas, serviços terceirizados e desenvolvimento técnico industrial."
+    "Fundição de alumínio coquilhado, ferramentas para motocicletas e apoio técnico para soluções industriais."
 };
 
 export default function ServicosPage() {
@@ -14,7 +14,7 @@ export default function ServicosPage() {
       <PageHero
         eyebrow="Serviços"
         title="Serviços industriais com processo, estrutura e aplicação real."
-        description="Fundição de alumínio, usinagem CNC, ferramentas para motocicletas e desenvolvimento técnico para empresas que precisam de peças confiáveis, controle dimensional e viabilidade produtiva."
+        description="Fundição de alumínio coquilhado com suporte técnico para desenvolvimento, fabricação de ferramentas para motocicletas e apoio de usinagem CNC por empresa parceira do mesmo grupo quando necessário."
       />
       <Services showIntro={false} />
     </main>

@@ -3,18 +3,18 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionHeading } from "@/components/SectionHeading";
 
 const items = [
-  "Peças fundidas por gravidade em alumínio",
-  "Tornos CNC e centros de usinagem CNC",
-  "Máquinas de medição tridimensional",
-  "Atendimento a máquinas agrícolas, automotivo, energia e equipamentos diversos",
+  "Peças fundidas em alumínio coquilhado",
+  "Controle rigoroso de processo",
+  "Apoio técnico ao desenvolvimento de soluções",
+  "Atendimento consultivo para empresas",
   "Desenvolvimento de ferramental e equipamentos especiais",
   "Foco em qualidade, prazo e melhor custo-benefício"
 ];
 
 const metrics = [
-  { icon: Factory, label: "Parque fabril", value: "35 equipamentos" },
-  { icon: Ruler, label: "Controle", value: "Medição técnica" },
-  { icon: Layers3, label: "Processos", value: "Fundição + CNC" },
+  { icon: Factory, label: "Especialidade", value: "Alumínio coquilhado" },
+  { icon: Ruler, label: "Controle", value: "Processo técnico" },
+  { icon: Layers3, label: "Atuação", value: "Fundição + ferramentas" },
   { icon: BadgeCheck, label: "Postura", value: "Ética e seriedade" }
 ];
 
@@ -27,7 +27,7 @@ export function Credibility() {
             <SectionHeading
               eyebrow="Autoridade técnica"
               title="Credibilidade vem de processo, equipamento e entrega."
-              description="A Tecnofusi reúne estrutura produtiva, controle dimensional e postura comercial séria para atender empresas que precisam de previsibilidade."
+              description="A Tecnofusi reúne estrutura produtiva, controle de processo e postura comercial séria para atender empresas que precisam de previsibilidade."
             />
           </AnimatedSection>
 

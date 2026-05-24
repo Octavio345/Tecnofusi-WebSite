@@ -5,21 +5,6 @@ import { Button } from "@/components/Button";
 import { SectionHeading } from "@/components/SectionHeading";
 import { services } from "@/lib/site";
 
-const aluminumReasons = [
-  "Redução de peso",
-  "Resistência à corrosão",
-  "Boa usinabilidade",
-  "Condutividade térmica",
-  "Condutividade elétrica",
-  "Absorção de vibração",
-  "Boa formação de bordas",
-  "Resistência ao desgaste",
-  "Estabilidade de forma",
-  "Reciclagem facilitada",
-  "Não toxicidade",
-  "Economia de projeto"
-];
-
 export function Services({ showIntro = true }: { showIntro?: boolean }) {
   const showDetails = !showIntro;
 
@@ -31,7 +16,7 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
             <SectionHeading
               eyebrow="Serviços"
               title="Capacidade técnica para transformar necessidade industrial em solução."
-              description="A Tecnofusi combina fundição, usinagem e desenvolvimento sob demanda para atender setores que exigem componentes resistentes, precisos e economicamente viáveis."
+              description="A Tecnofusi atua em fundição de alumínio coquilhado, ferramentas para motocicletas e desenvolvimento sob demanda para empresas que exigem qualidade e viabilidade produtiva."
             />
           </AnimatedSection>
         )}
@@ -84,14 +69,18 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
           <div className="mt-14 grid gap-5">
             {services.map((service) => {
               const Icon = service.icon;
+              const hasDetailsContent =
+                ("technicalPoints" in service && service.technicalPoints) ||
+                ("segments" in service && service.segments) ||
+                ("highlights" in service && service.highlights);
 
               return (
                 <AnimatedSection
                   key={`${service.title}-detail`}
                   className="overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.045] shadow-[0_18px_60px_rgba(0,0,0,0.2)]"
                 >
-                  <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
-                    <div className="border-b border-white/10 bg-gradient-to-br from-brand-deep/35 via-white/[0.04] to-transparent p-6 sm:p-8 lg:border-b-0 lg:border-r">
+                  <div className={hasDetailsContent ? "grid gap-0 lg:grid-cols-[0.9fr_1.1fr]" : ""}>
+                    <div className={hasDetailsContent ? "border-b border-white/10 bg-gradient-to-br from-brand-deep/35 via-white/[0.04] to-transparent p-6 sm:p-8 lg:border-b-0 lg:border-r" : "bg-gradient-to-br from-brand-deep/35 via-white/[0.04] to-transparent p-6 sm:p-8 lg:max-w-3xl"}>
                       <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-bright/14 text-brand-soft">
                         <Icon className="h-6 w-6" />
                       </span>
@@ -103,6 +92,7 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
                       </p>
                     </div>
 
+                    {hasDetailsContent && (
                     <div className="grid gap-5 p-6 sm:p-8">
                       {"technicalPoints" in service && service.technicalPoints && (
                         <div>
@@ -148,63 +138,37 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
                         </div>
                       )}
 
-                      <div>
-                        <div className="flex items-center gap-3">
-                          <CheckCircle2 className="h-5 w-5 text-brand-soft" />
-                          <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-white">
-                            Aplicações e vantagens
-                          </h4>
-                        </div>
+                      {"highlights" in service && service.highlights && (
+                        <div>
+                          <div className="flex items-center gap-3">
+                            <CheckCircle2 className="h-5 w-5 text-brand-soft" />
+                            <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-white">
+                              Aplicações e vantagens
+                            </h4>
+                          </div>
 
-                        <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                          {service.highlights.map((item) => (
-                            <div
-                              key={item}
-                              className="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.035] p-4"
-                            >
-                              <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-brand-bright" />
-                              <span className="text-sm leading-6 text-metal-200">
-                                {item}
-                              </span>
-                            </div>
-                          ))}
+                          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                            {service.highlights.map((item) => (
+                              <div
+                                key={item}
+                                className="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.035] p-4"
+                              >
+                                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-brand-bright" />
+                                <span className="text-sm leading-6 text-metal-200">
+                                  {item}
+                                </span>
+                              </div>
+                            ))}
+                          </div>
                         </div>
-                      </div>
+                      )}
                     </div>
+                    )}
                   </div>
                 </AnimatedSection>
               );
             })}
 
-            <AnimatedSection className="rounded-[30px] border border-white/10 bg-graphite-900/80 p-6 sm:p-8">
-              <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
-                <div>
-                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-soft">
-                    Fundidos de alumínio
-                  </span>
-                  <h3 className="mt-4 text-2xl font-semibold text-white">
-                    Razões técnicas para escolher peças fundidas em alumínio.
-                  </h3>
-                  <p className="mt-4 text-sm leading-7 text-metal-300">
-                    O alumínio combina leveza, desempenho térmico, resistência e
-                    versatilidade de projeto. Quando o processo é bem controlado,
-                    o resultado é uma peça estável, funcional e economicamente
-                    viável.
-                  </p>
-                </div>
-
-                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {aluminumReasons.map((item) => (
-                    <div
-                      key={item}
-                      className="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-medium text-metal-100"
-                    >
-                      {item}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </AnimatedSection>
           </div>
         )}
 

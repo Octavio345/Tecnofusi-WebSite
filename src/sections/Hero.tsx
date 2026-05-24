@@ -25,7 +25,7 @@ const processSteps = [
   {
     number: "02",
     title: "Processo ideal",
-    description: "Definimos fundição, usinagem, ferramental ou solução combinada."
+    description: "Definimos fundição, ferramental ou solução técnica combinada."
   },
   {
     number: "03",
@@ -41,7 +41,7 @@ const processSteps = [
 
 const capabilities = [
   { label: "Fundição", value: "Alumínio", icon: Factory },
-  { label: "Precisão", value: "CNC", icon: Gauge },
+  { label: "Processo", value: "Controle", icon: Gauge },
   { label: "Controle", value: "Qualidade", icon: ShieldCheck }
 ];
 
@@ -90,11 +90,11 @@ export function Hero() {
               </div>
 
               <h1 className="mt-6 max-w-4xl text-balance text-[2.15rem] font-semibold leading-[1.08] text-white min-[390px]:text-[2.35rem] sm:text-5xl lg:text-[3.7rem] xl:text-[4rem]">
-                Precisão industrial para fundição, usinagem e soluções especiais.
+                Precisão industrial em fundição de alumínio e soluções especiais.
               </h1>
 
               <p className="mt-5 max-w-3xl text-[15px] leading-7 text-metal-300 sm:text-lg sm:leading-8">
-                A Tecnofusi une capacidade técnica, processos rígidos e atendimento consultivo para entregar componentes confiáveis a empresas em todo o Brasil.
+                Fundição de alumínio coquilhado com precisão, controle de processo e qualidade para atender empresas em todo o Brasil.
               </p>
 
               <div className="mt-7 grid gap-3 sm:flex sm:flex-row">

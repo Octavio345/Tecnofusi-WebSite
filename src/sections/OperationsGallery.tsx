@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Factory, Gauge, Wrench } from "lucide-react";
+import { Building2, Factory, Wrench } from "lucide-react";
 
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -14,12 +14,12 @@ const photos = [
     icon: Factory
   },
   {
-    title: "Usinagem industrial",
+    title: "Estrutura Tecnofusi",
     description:
-      "Estrutura preparada para peças técnicas, ajustes dimensionais e demandas sob medida.",
-    src: "/images/site/usinagem-industrial.jpg",
-    alt: "Equipamento de usinagem industrial no parque fabril da Tecnofusi",
-    icon: Gauge
+      "Base operacional voltada para atendimento técnico, organização produtiva e compromisso com prazo.",
+    src: "/images/site/fachada-tecnofusi.jpg",
+    alt: "Fachada da Tecnofusi",
+    icon: Building2
   },
   {
     title: "Linha de motocicletas",
@@ -39,7 +39,7 @@ export function OperationsGallery() {
           <SectionHeading
             eyebrow="Operação"
             title="Fotos reais da estrutura e dos processos Tecnofusi."
-            description="Um recorte direto do que sustenta as entregas: fundição, usinagem e desenvolvimento de ferramentas especiais."
+            description="Um recorte direto do que sustenta as entregas: fundição de alumínio, estrutura técnica e desenvolvimento de ferramentas especiais."
           />
         </AnimatedSection>
 

@@ -5,9 +5,9 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { timeline, values } from "@/lib/site";
 
 const pillars = [
-  { label: "Fundição", detail: "Alumínio por gravidade" },
-  { label: "Usinagem", detail: "Tornos e centros CNC" },
-  { label: "Soluções", detail: "Ferramental sob demanda" }
+  { label: "Fundição", detail: "Alumínio coquilhado" },
+  { label: "Ferramentas", detail: "Linha motocicletas" },
+  { label: "Soluções", detail: "Apoio técnico" }
 ];
 
 export function About({ compact = false }: { compact?: boolean }) {
@@ -21,7 +21,7 @@ export function About({ compact = false }: { compact?: boolean }) {
               <SectionHeading
                 eyebrow="Quem somos"
                 title="Uma base industrial criada para entregar precisão, prazo e suporte técnico."
-                description="Desde 2011, a Tecnofusi atua em fundição de alumínio, usinagem CNC e desenvolvimento de soluções especiais para demandas industriais."
+                description="Desde 2011, a Tecnofusi atua em fundição de alumínio coquilhado, ferramentas para motocicletas e desenvolvimento de soluções especiais para demandas industriais."
               />
               <div className="mt-8">
                 <Button href="/sobre" variant="secondary">
@@ -64,11 +64,10 @@ export function About({ compact = false }: { compact?: boolean }) {
             />
             <div className="mt-6 grid gap-5 text-base leading-8 text-metal-300">
               <p>
-                A empresa atua em fundição de alumínio por gravidade, usinagem
-                industrial e desenvolvimento de ferramentas e equipamentos
-                especiais para motocicletas. O foco é transformar necessidade
-                real de produção em solução viável, estável e aplicável no chão
-                de fábrica.
+                A empresa atua em fundição de alumínio coquilhado e
+                desenvolvimento de ferramentas e equipamentos especiais para
+                motocicletas. Quando necessário, conta com apoio de usinagem CNC
+                por empresa parceira do mesmo grupo empresarial.
               </p>
               <p>
                 O atendimento é voltado para empresas que precisam de
