@@ -4,7 +4,7 @@ Site institucional da Tecnofusi, desenvolvido com Next.js, React, TypeScript, Ta
 
 O site organiza a comunicação da empresa em quatro pontos: fundição de alumínio coquilhado, fabricação de ferramentas especiais, apoio complementar de usinagem CNC por empresa parceira do mesmo grupo e venda online por canais oficiais. Produtos para motocicletas entram como revenda.
 
-## Como rodar
+## O que precisa instalar
 
 Requisitos:
 
@@ -15,11 +15,38 @@ npm -v
 
 Use Node.js 20 ou superior.
 
-Instalação:
+Depois de baixar o projeto, instale as dependências com:
 
 ```bash
 npm install
 ```
+
+Esse comando lê o `package.json` e instala todas as dependências diretas do projeto.
+
+Bibliotecas usadas pelo site:
+
+- `next`
+- `react`
+- `react-dom`
+- `framer-motion`
+- `lucide-react`
+- `clsx`
+
+Ferramentas de desenvolvimento:
+
+- `typescript`
+- `tailwindcss`
+- `@tailwindcss/postcss`
+- `postcss`
+- `eslint`
+- `eslint-config-next`
+- `@types/node`
+- `@types/react`
+- `@types/react-dom`
+
+Não precisa instalar esses pacotes um por um quando o projeto já está clonado. O caminho certo é rodar `npm install` na raiz do projeto.
+
+## Como rodar
 
 Ambiente local:
 
