@@ -1,0 +1,35 @@
+@theme {
+  --color-graphite-950: #07080a;
+  --color-graphite-900: #0d0f14;
+  --color-graphite-800: #151922;
+  --color-graphite-700: #222734;
+  --color-brand-red: #b1080c;
+  --color-brand-deep: #730306;
+  --color-brand-bright: #e0141b;
+  --color-brand-soft: #ff4b55;
+  --color-metal-50: #f8fafc;
+  --color-metal-100: #e8edf3;
+  --color-metal-300: #aeb7c5;
+  --color-metal-500: #697386;
+  --color-signal-cyan: #67e8f9;
+  --font-sans: var(--font-inter), Arial, Helvetica, sans-serif;
+  --shadow-premium: 0 24px 80px rgba(0,0,0,0.35);
+  --shadow-red-glow: 0 0 42px rgba(224,20,27,0.28);
+  --background-image-tech-grid: linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
+  --background-image-radial-sweep: radial-gradient(circle at 18% 18%, rgba(224,20,27,0.18), transparent 30%), radial-gradient(circle at 82% 8%, rgba(103,232,249,0.12), transparent 24%), linear-gradient(135deg, #07080a 0%, #11131a 58%, #18080a 100%);
+}
+
+:root {
+  color-scheme: dark;
+  --header-height: 84px;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --color-graphite-950: #0b0d12;
+    --color-graphite-900: #111620;
+    --color-graphite-800: #1b2230;
+    --background-image-tech-grid: linear-gradient(rgba(255,255,255,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px);
+    --background-image-radial-sweep: radial-gradient(circle at 18% 14%, rgba(224,20,27,0.3), transparent 34%), radial-gradient(circle at 86% 8%, rgba(103,232,249,0.18), transparent 28%), linear-gradient(145deg, #0b0d12 0%, #151923 58%, #220b0d 100%);
+  }
+}

@@ -2,7 +2,7 @@
 
 import { useEffect, useState, type CSSProperties } from "react";
 import Image from "next/image";
-import styles from "./IntroAnimation.module.css";
+import styles from "@/styles/modules/IntroAnimation.module.css";
 
 const LEAVE_DELAY   = 5500;
 const UNMOUNT_DELAY = 6600;

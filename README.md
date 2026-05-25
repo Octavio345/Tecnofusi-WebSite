@@ -72,7 +72,7 @@ npm run start
 src/app
 ```
 
-Rotas do App Router, metadados, sitemap, robots, layout global e estilos globais.
+Rotas do App Router, metadados, sitemap, robots e layout global.
 
 ```txt
 src/components
@@ -91,6 +91,12 @@ src/lib/site.ts
 ```
 
 Conteúdo central do site. É o primeiro arquivo para revisar quando mudar telefone, endereço, redes sociais, serviços, textos institucionais ou links comerciais.
+
+```txt
+src/styles
+```
+
+Entrada global de CSS, tokens visuais, base do site, utilitários globais e módulos CSS específicos.
 
 ```txt
 public/images
