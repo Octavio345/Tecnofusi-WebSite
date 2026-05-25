@@ -1,3 +1,5 @@
-# Assets
+# Arquivos de apoio
 
-Source design assets can live here during development. Public files that must be served by the browser should go in `public/`, such as `public/images/tecnofusi-logo.png`.
+Use esta pasta para arquivos de apoio durante desenvolvimento.
+
+Arquivos que precisam ser acessados pelo navegador devem ficar em `public/`, como logos, fotos institucionais e imagens usadas nas páginas.

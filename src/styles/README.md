@@ -1,3 +1,5 @@
-# Styles
+# Estilos
 
-Global styles live in `src/app/globals.css` because the Next.js App Router loads global CSS from the root layout. Keep future design tokens, Tailwind extensions, or CSS modules here when a style becomes reusable across sections.
+Os estilos globais ficam em `src/app/globals.css`, porque o App Router carrega CSS global a partir do layout raiz.
+
+Use CSS module apenas quando o estilo pertencer a um componente específico, como a animação inicial. Tokens visuais compartilhados devem continuar no Tailwind ou no CSS global.

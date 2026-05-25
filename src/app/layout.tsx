@@ -67,12 +67,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={inter.variable}>
       <head>
-        {/*
-         * Roda de forma SÍNCRONA antes do primeiro paint.
-         * Verifica sessionStorage: se for primeira visita, trava overflow/pointer
-         * e seta data-intro="active" no <html> para o IntroAnimation ler.
-         * sessionStorage reseta a cada sessão do browser (aba fechada = intro aparece de novo).
-         */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var k='tecnofusi_intro_v1';if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,'1');var d=document.documentElement;d.setAttribute('data-intro','active');d.style.overflow='hidden';d.style.pointerEvents='none'}}catch(e){}})()`,

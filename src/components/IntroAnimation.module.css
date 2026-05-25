@@ -1,5 +1,3 @@
-/* ─── KEYFRAMES ─────────────────────────────────────────── */
-
 @keyframes tecnoFadeIn {
   to { opacity: 1; }
 }
@@ -100,8 +98,6 @@
 }
 
 
-/* ─── OVERLAY ────────────────────────────────────────────── */
-
 .overlay {
   position: fixed;
   inset: 0;
@@ -137,8 +133,6 @@
 }
 
 
-/* ─── IGNITION FLASH ─────────────────────────────────────── */
-
 .igniteFlash {
   position: absolute;
   inset: 0;
@@ -154,8 +148,6 @@
   animation: tecnoIgnite 0.7s ease 0.14s forwards;
 }
 
-
-/* ─── MOLTEN GLOW ────────────────────────────────────────── */
 
 .radialGlow {
   position: absolute;
@@ -177,8 +169,6 @@
     tecnoGlowPulse 2.8s ease-in-out 1.90s infinite;
 }
 
-
-/* ─── HORIZONTAL LASER SCANNER ───────────────────────────── */
 
 .scanH {
   position: absolute;
@@ -203,8 +193,6 @@
 }
 
 
-/* ─── SPARKS ─────────────────────────────────────────────── */
-
 .sparksWrap {
   position: absolute;
   inset: 0;
@@ -221,8 +209,6 @@
   animation: tecnoSpark var(--dur, 0.85s) ease-out var(--delay, 0.58s) forwards;
 }
 
-
-/* ─── CORNER BRACKETS ────────────────────────────────────── */
 
 .corner {
   position: absolute;
@@ -261,8 +247,6 @@
 }
 
 
-/* ─── MAIN CONTENT ───────────────────────────────────────── */
-
 .content {
   position: relative;
   z-index: 2;
@@ -275,8 +259,6 @@
   animation: tecnoContentLeave 0.55s cubic-bezier(0.4, 0, 1, 1) forwards;
 }
 
-
-/* ─── LOGO ───────────────────────────────────────────────── */
 
 .logoWrap {
   position: relative;
@@ -295,8 +277,6 @@
   object-fit: contain;
 }
 
-
-/* ─── TAGLINE ────────────────────────────────────────────── */
 
 .taglineWrap {
   display: flex;
@@ -327,8 +307,6 @@
 }
 
 
-/* ─── PROGRESS BAR ───────────────────────────────────────── */
-
 .progressBar {
   position: absolute;
   bottom: 0;
@@ -343,15 +321,11 @@
 }
 
 
-/* ─── RESPONSIVE ─────────────────────────────────────────── */
-
 @media (min-width: 480px) {
   .logoWrap { min-width: 340px; }
   .tagline  { font-size: 11.5px; }
 }
 
-
-/* ─── REDUCED MOTION ─────────────────────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {
   .overlayLeave  { animation: tecnoInstantLeave 0.3s ease forwards; }
