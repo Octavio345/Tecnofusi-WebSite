@@ -7,6 +7,11 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { Header } from "@/components/Header";
 import { IntroAnimation } from "@/components/IntroAnimation";
 import { siteConfig } from "@/lib/site";
+import {
+  googleAdsConversionScript,
+  googleTagManagerScript,
+  trackingConfig
+} from "@/lib/tracking";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -69,11 +74,29 @@ export default function RootLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
+            __html: googleTagManagerScript,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: googleAdsConversionScript,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
             __html: `(function(){try{var k='tecnofusi_intro_v1';if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,'1');var d=document.documentElement;d.setAttribute('data-intro','active');d.style.overflow='hidden';d.style.pointerEvents='none'}}catch(e){}})()`,
           }}
         />
       </head>
       <body className="font-sans">
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${trackingConfig.googleTagManagerId}`}
+            height={0}
+            width={0}
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <div className="noise-layer" aria-hidden="true" />
         <IntroAnimation />
         <Header />

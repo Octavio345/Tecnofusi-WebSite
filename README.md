@@ -124,6 +124,16 @@ Imagens servidas diretamente pelo site, incluindo logo, fotos da empresa e marca
 
 Ao alterar textos, manter a separação entre o que a empresa fabrica, o que revende e o que executa com apoio parceiro. Essa separação evita promessa comercial errada e deixa o site mais profissional.
 
+## Rastreamento
+
+Os códigos do Google Tag Manager e Google Ads ficam centralizados em `src/lib/tracking.ts`.
+
+- GTM: `GTM-W3NQMMMX`
+- Google Ads: `AW-18186736179`
+- Conversão de WhatsApp: `AW-18186736179/wRVpCNrRu7McELOkjuBD`
+
+O layout carrega os scripts globais e o `noscript` do GTM. Os cliques de WhatsApp chamam `trackWhatsAppConversion`, incluindo botões, link flutuante, link social e envio do formulário de contato.
+
 Antes de publicar qualquer mudança:
 
 ```bash

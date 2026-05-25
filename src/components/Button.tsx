@@ -1,13 +1,18 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import type { MouseEvent, ReactNode } from "react";
+import { isWhatsAppHref, trackWhatsAppConversion } from "@/utils/tracking";
 import { cn } from "@/utils/cn";
 
 type ButtonProps = {
-  children: React.ReactNode;
+  children: ReactNode;
   href: string;
   variant?: "primary" | "secondary" | "ghost";
   external?: boolean;
   className?: string;
+  onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
 };
 
 const variants = {
@@ -18,16 +23,31 @@ const variants = {
   ghost: "text-metal-100 hover:bg-white/[0.07] hover:text-white"
 };
 
-export function Button({ children, href, variant = "primary", external, className }: ButtonProps) {
+export function Button({
+  children,
+  href,
+  variant = "primary",
+  external,
+  className,
+  onClick
+}: ButtonProps) {
   const classes = cn(
     "focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 text-sm font-semibold transition duration-300",
     variants[variant],
     className
   );
 
+  function handleClick(event: MouseEvent<HTMLAnchorElement>) {
+    onClick?.(event);
+
+    if (!event.defaultPrevented && isWhatsAppHref(href)) {
+      trackWhatsAppConversion();
+    }
+  }
+
   if (external) {
     return (
-      <a className={classes} href={href} target="_blank" rel="noreferrer">
+      <a className={classes} href={href} target="_blank" rel="noreferrer" onClick={handleClick}>
         {children}
         <ArrowRight className="h-4 w-4" aria-hidden="true" />
       </a>
@@ -35,7 +55,7 @@ export function Button({ children, href, variant = "primary", external, classNam
   }
 
   return (
-    <Link className={classes} href={href}>
+    <Link className={classes} href={href} onClick={handleClick}>
       {children}
       <ArrowRight className="h-4 w-4" aria-hidden="true" />
     </Link>

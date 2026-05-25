@@ -1,4 +1,7 @@
+"use client";
+
 import { siteConfig } from "@/lib/site";
+import { trackWhatsAppConversion } from "@/utils/tracking";
 
 function WhatsAppOfficialIcon() {
   return (
@@ -15,11 +18,12 @@ function WhatsAppOfficialIcon() {
 
 export function FloatingWhatsApp() {
   return (
-    
-      <a href={siteConfig.whatsappHref}
+    <a
+      href={siteConfig.whatsappHref}
       target="_blank"
       rel="noreferrer"
       aria-label="Falar com a Tecnofusi pelo WhatsApp"
+      onClick={trackWhatsAppConversion}
       className="focus-ring fixed bottom-12 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_0_28px_6px_rgba(37,211,102,0.45)] transition duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_0_38px_8px_rgba(37,211,102,0.55)]"
     >
       <WhatsAppOfficialIcon />

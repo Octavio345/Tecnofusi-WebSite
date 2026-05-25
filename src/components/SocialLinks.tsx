@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import { siteConfig } from "@/lib/site";
 import { cn } from "@/utils/cn";
+import { isWhatsAppHref, trackWhatsAppConversion } from "@/utils/tracking";
 
 type SocialVariant = "hero" | "footer";
 
@@ -107,6 +108,11 @@ function SocialItem({
     youtube: "bg-[#FF0000] shadow-[0_0_18px_rgba(255,0,0,0.28)]",
     whatsapp: "bg-[#25D366] shadow-[0_0_18px_rgba(37,211,102,0.26)]"
   };
+  const handleClick = () => {
+    if (isWhatsAppHref(href)) {
+      trackWhatsAppConversion();
+    }
+  };
 
   if (variant === "hero") {
     return (
@@ -116,6 +122,7 @@ function SocialItem({
         rel="noreferrer"
         aria-label={`${title} - ${subtitle}`}
         title={`${title} - ${subtitle}`}
+        onClick={handleClick}
         className="focus-ring group flex min-h-[78px] min-w-0 flex-col items-center justify-center rounded-2xl border border-white/12 bg-graphite-950/55 px-2 py-2 text-center text-metal-100 shadow-[0_12px_34px_rgba(0,0,0,0.22)] transition duration-300 hover:-translate-y-0.5 hover:border-white/24 hover:bg-white/[0.075]"
       >
         <span
@@ -146,6 +153,7 @@ function SocialItem({
       rel="noreferrer"
       aria-label={`${title} - ${subtitle}`}
       title={`${title} - ${subtitle}`}
+      onClick={handleClick}
       className="focus-ring group inline-flex min-h-11 min-w-0 items-center gap-2 rounded-2xl border border-white/12 bg-graphite-950/55 px-3 py-2 text-left text-metal-100 shadow-[0_12px_34px_rgba(0,0,0,0.22)] transition duration-300 hover:-translate-y-0.5 hover:border-white/24 hover:bg-white/[0.075]"
     >
       <span

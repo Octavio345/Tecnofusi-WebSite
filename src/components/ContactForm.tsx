@@ -3,6 +3,7 @@
 import { Send } from "lucide-react";
 import { FormEvent } from "react";
 import { siteConfig } from "@/lib/site";
+import { trackWhatsAppConversion } from "@/utils/tracking";
 
 export function ContactForm() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -29,6 +30,7 @@ export function ContactForm() {
     const whatsappUrl = new URL(siteConfig.whatsappHref);
 
     whatsappUrl.searchParams.set("text", text);
+    trackWhatsAppConversion();
     window.open(whatsappUrl.toString(), "_blank", "noopener,noreferrer");
   }
 
