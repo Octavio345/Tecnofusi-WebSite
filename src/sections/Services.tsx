@@ -23,8 +23,8 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
           <AnimatedSection>
             <SectionHeading
               eyebrow="Serviços"
-              title="Capacidade técnica para transformar necessidade industrial em solução."
-              description="A Tecnofusi atua em fundição de alumínio coquilhado, ferramentas para motocicletas e desenvolvimento sob demanda para empresas que exigem qualidade e viabilidade produtiva."
+              title="Áreas de atuação apresentadas com clareza técnica."
+              description="A Tecnofusi concentra sua atuação em fundição de alumínio coquilhado, fabricação de ferramentas especiais, revenda de produtos para motocicletas e venda online por canais oficiais."
             />
           </AnimatedSection>
         )}
@@ -44,7 +44,7 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
                       <Icon className="h-6 w-6" />
                     </div>
                     <span className="text-xs font-semibold uppercase tracking-[0.18em] text-metal-500">
-                      Serviço técnico
+                      {service.category}
                     </span>
                   </div>
 

@@ -17,22 +17,25 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Tecnofusi | Fundição de alumínio e soluções industriais",
+    default: "Tecnofusi | Fundição de alumínio e ferramentas especiais",
     template: "%s | Tecnofusi"
   },
   description:
-    "Tecnofusi: fundição de alumínio coquilhado e desenvolvimento de ferramentas especiais com qualidade, prazo e precisão técnica.",
+    "Tecnofusi: fundição de alumínio coquilhado, fabricação de ferramentas especiais e venda online por canais oficiais.",
   keywords: [
     "Tecnofusi",
     "fundição de alumínio coquilhado",
     "fundição de alumínio",
-    "ferramentas para motocicletas",
+    "produtos para motocicletas",
+    "revenda para motocicletas",
+    "ferramentas especiais",
+    "venda online Tecnofusi",
     "Santa Bárbara D'Oeste"
   ],
   openGraph: {
-    title: "Tecnofusi | Soluções industriais de precisão",
+    title: "Tecnofusi | Fundição e ferramentas especiais",
     description:
-      "Fundição de alumínio coquilhado e desenvolvimento técnico para empresas que precisam de qualidade, prazo e confiabilidade.",
+      "Fundição de alumínio coquilhado, fabricação de ferramentas especiais e venda online por canais oficiais.",
     url: siteConfig.url,
     siteName: "Tecnofusi",
     locale: "pt_BR",
@@ -48,9 +51,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tecnofusi | Soluções industriais de precisão",
+    title: "Tecnofusi | Fundição e ferramentas especiais",
     description:
-      "Fundição de alumínio coquilhado e ferramentas especiais com padrão técnico elevado.",
+      "Fundição de alumínio coquilhado, ferramentas especiais e canais oficiais de venda online.",
     images: ["/images/tecnofusi-logo.png"]
   },
   alternates: {

@@ -22,11 +22,11 @@ const photos = [
     icon: Building2
   },
   {
-    title: "Linha de motocicletas",
+    title: "Revenda para motocicletas",
     description:
-      "Ferramentas e equipamentos especiais para oficinas, manutenção e aplicações técnicas.",
+      "Itens de revenda para motocicletas divulgados e comercializados por canais oficiais da Tecnofusi.",
     src: null,
-    alt: "Linha de ferramentas Tecnofusi para motocicletas",
+    alt: "Produtos de revenda Tecnofusi para motocicletas",
     icon: Wrench
   }
 ];
@@ -39,7 +39,7 @@ export function OperationsGallery() {
           <SectionHeading
             eyebrow="Operação"
             title="Fotos reais da estrutura e dos processos Tecnofusi."
-            description="Um recorte direto do que sustenta as entregas: fundição de alumínio, estrutura técnica e desenvolvimento de ferramentas especiais."
+            description="Um recorte direto do que sustenta as entregas: fundição de alumínio, estrutura técnica, fabricação de ferramentas especiais e canais comerciais oficiais."
           />
         </AnimatedSection>
 

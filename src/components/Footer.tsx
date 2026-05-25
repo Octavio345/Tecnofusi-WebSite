@@ -12,7 +12,7 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-5 max-w-md text-sm leading-7 text-metal-300">
-              Soluções industriais em fundição de alumínio coquilhado e ferramentas especiais para empresas que precisam de precisão, prazo e suporte técnico.
+              Fundição de alumínio coquilhado, fabricação de ferramentas especiais e venda online por canais oficiais, com precisão, prazo e suporte técnico.
             </p>
             <SocialLinks className="mt-6" />
           </div>

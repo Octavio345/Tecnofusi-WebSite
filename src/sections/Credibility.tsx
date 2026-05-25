@@ -8,14 +8,14 @@ const items = [
   "Apoio técnico ao desenvolvimento de soluções",
   "Atendimento consultivo para empresas",
   "Desenvolvimento de ferramental e equipamentos especiais",
-  "Foco em qualidade, prazo e melhor custo-benefício"
+  "Venda online por canais oficiais da empresa"
 ];
 
 const metrics = [
   { icon: Factory, label: "Especialidade", value: "Alumínio coquilhado" },
   { icon: Ruler, label: "Controle", value: "Processo técnico" },
   { icon: Layers3, label: "Atuação", value: "Fundição + ferramentas" },
-  { icon: BadgeCheck, label: "Postura", value: "Ética e seriedade" }
+  { icon: BadgeCheck, label: "Comercialização", value: "Canais oficiais" }
 ];
 
 export function Credibility() {

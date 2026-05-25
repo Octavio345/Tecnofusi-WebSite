@@ -25,7 +25,7 @@ const processSteps = [
   {
     number: "02",
     title: "Processo ideal",
-    description: "Definimos fundição, ferramental ou solução técnica combinada."
+    description: "Definimos fundição, ferramental ou apoio complementar."
   },
   {
     number: "03",
@@ -91,11 +91,11 @@ export function Hero() {
               </div>
 
               <h1 className="mt-6 max-w-4xl text-balance text-[2.15rem] font-semibold leading-[1.08] text-white min-[390px]:text-[2.35rem] sm:text-5xl lg:text-[3.7rem] xl:text-[4rem]">
-                Precisão industrial em fundição de alumínio e soluções especiais.
+                Fundição de alumínio coquilhado e ferramentas especiais Tecnofusi.
               </h1>
 
               <p className="mt-5 max-w-3xl text-[15px] leading-7 text-metal-300 sm:text-lg sm:leading-8">
-                Fundição de alumínio coquilhado com precisão, controle de processo e qualidade para atender empresas em todo o Brasil.
+                Fundição de alumínio coquilhado, fabricação de ferramentas especiais e canais oficiais de venda online. Produtos para motocicletas são comercializados como revenda.
               </p>
 
               <div className="mt-7 grid gap-3 sm:flex sm:flex-row">
@@ -127,7 +127,7 @@ export function Hero() {
                 <div className="min-w-0 rounded-2xl border border-white/10 bg-white/[0.025] p-3 sm:border-0 sm:bg-transparent sm:p-0 xl:border-l xl:border-white/10 xl:pl-5">
                   <p className="text-sm font-semibold text-white">Visite nossas redes</p>
                   <p className="mt-1 text-sm leading-6 text-metal-300">
-                    Acompanhe Fundidos, Motocicletas, vídeos e atendimento.
+                    Acompanhe Fundidos, Loja, vídeos e atendimento.
                   </p>
 
                   <div className="mt-4">

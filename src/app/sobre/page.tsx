@@ -6,7 +6,7 @@ import { Credibility } from "@/sections/Credibility";
 export const metadata: Metadata = {
   title: "Sobre",
   description:
-    "Conheça a história, missão, visão, valores e diferenciais técnicos da Tecnofusi."
+    "Conheça a atuação da Tecnofusi em fundição de alumínio coquilhado, ferramentas especiais e venda online."
 };
 
 export default function SobrePage() {
@@ -15,7 +15,7 @@ export default function SobrePage() {
       <PageHero
         eyebrow="Empresa"
         title="Uma indústria técnica, séria e orientada por resultado."
-        description="A Tecnofusi consolidou sua atuação em serviços industriais com eficiência, ética, qualidade e desenvolvimento técnico de soluções."
+        description="A Tecnofusi consolidou sua atuação em fundição de alumínio coquilhado, fabricação de ferramentas especiais, revenda para motocicletas e canais oficiais de venda online."
       />
       <About />
       <Credibility />

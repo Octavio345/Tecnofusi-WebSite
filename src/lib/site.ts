@@ -24,19 +24,19 @@ export const siteConfig = {
   name: "Tecnofusi",
   url: "https://tecnofusi.com.br",
   description:
-    "Fundição de alumínio coquilhado e desenvolvimento de ferramentas especiais para demandas industriais.",
+    "Fundição de alumínio coquilhado, fabricação de ferramentas especiais e venda online de produtos oficiais e itens de revenda.",
   phonePrimary: "(19) 3455-5329",
   whatsapp: "(19) 98135-9252",
   whatsappHref,
   email: "tecnofusi@tecnofusi.com.br",
-  address: "Rua Bárbara Rosa Vital, 129 - Condomínio Cintec - Santa Bárbar d Oeste/SP - 13459-626",
+  address: "Rua Bárbara Rosa Vital, 129 - Condomínio Cintec - Santa Bárbara d'Oeste/SP - 13459-626",
   mapsQuery:
     "Rua%20B%C3%A1rbara%20Rosa%20Vital%2C%20129%20-%20Condom%C3%ADnio%20Cintec%20-%20Santa%20B%C3%A1rbara%20d%27Oeste%2FSP%20-%2013459-626",
   socials: {
     instagramFundidos: "https://www.instagram.com/tecnofusifundidos/",
-    instagramMotocicletas: "https://www.instagram.com/tecnofusimotocicletas/",
+    instagramLoja: "https://www.instagram.com/tecnofusimotocicletas/",
     facebookFundidos: "https://www.facebook.com/tecnofusifundidos",
-    facebookMotocicletas: "https://www.facebook.com/tecnofusimotocicletas",
+    facebookLoja: "https://www.facebook.com/tecnofusimotocicletas",
     youtube: "https://www.youtube.com/@edvaldogallina9902",
     whatsapp: whatsappHref
   },
@@ -58,20 +58,21 @@ export const navItems = [
 
 export const stats = [
   { value: "2011", label: "Fundação e início das operações" },
-  { value: "B2B", label: "Atendimento industrial para empresas" },
-  { value: "2", label: "Frentes principais: fundição e ferramentas" },
-  { value: "BR", label: "Atendimento para empresas em todo o Brasil" }
+  { value: "B2B", label: "Atendimento industrial e técnico para empresas" },
+  { value: "2", label: "Frentes industriais: fundição e ferramentas" },
+  { value: "Online", label: "Venda por loja própria e marketplaces oficiais" }
 ];
 
 export const services = [
   {
     icon: Factory,
+    category: "Atividade principal",
     title: "Fundição de alumínio coquilhado",
     description:
-      "Produção de peças em alumínio coquilhado para serviços terceirizados, com controle técnico, qualidade uniforme e foco em capacidade produtiva.",
-    bullets: ["Alumínio coquilhado", "Serviços terceirizados", "Qualidade uniforme"],
+      "Produção de peças em alumínio coquilhado para demandas industriais e produtos próprios, com controle técnico, repetibilidade e qualidade uniforme.",
+    bullets: ["Alumínio coquilhado", "Produção técnica", "Qualidade uniforme"],
     details:
-      "Razões técnicas para escolher peças fundidas em alumínio: leveza, resistência, estabilidade dimensional e viabilidade produtiva. Com controle adequado de processo, é possível produzir peças em escala mantendo qualidade e repetibilidade.",
+      "A fundição de alumínio coquilhado é a base produtiva da Tecnofusi. Ela atende demandas de terceiros e produtos fabricados pela empresa, com aplicação em diferentes peças fundidas e foco em qualidade repetível.",
     highlights: [
       "Baixa densidade e redução de peso",
       "Boa condutividade térmica e elétrica",
@@ -89,35 +90,44 @@ export const services = [
   },
   {
     icon: Cpu,
-    title: "Apoio de usinagem do grupo",
+    category: "Apoio complementar",
+    title: "Usinagem CNC complementar",
     description:
-      "Quando necessário, a Tecnofusi conta com suporte de usinagem CNC por meio de empresa parceira do mesmo grupo empresarial.",
-    bullets: ["Empresa parceira", "Mesmo grupo empresarial", "Apoio complementar"],
+      "Quando uma peça ou ferramenta exige acabamento, ajustes ou tolerâncias específicas, a Tecnofusi pode integrar apoio de usinagem CNC por empresa parceira do mesmo grupo.",
+    bullets: ["Empresa parceira", "Mesmo grupo empresarial", "Etapa complementar"],
     details:
-      "Quando necessário, a Tecnofusi conta com suporte de usinagem CNC por meio de empresa parceira do mesmo grupo empresarial."
+      "A usinagem CNC entra como etapa complementar quando o projeto exige acabamento, ajuste dimensional ou integração entre peça fundida e aplicação final. Esse apoio é realizado por empresa parceira do mesmo grupo empresarial e integrado ao atendimento quando fizer sentido técnico.",
+    highlights: [
+      "Acabamento de peças quando necessário",
+      "Ajustes dimensionais complementares",
+      "Integração com projetos fundidos",
+      "Encaminhamento pelo mesmo grupo empresarial"
+    ]
   },
   {
     icon: Wrench,
-    title: "Ferramentas para motocicletas",
+    category: "Revenda",
+    title: "Produtos para motocicletas",
     description:
-      "Desenvolvimento de ferramentas e equipamentos especiais para motocicletas, com foco em inovação, melhoria de produto e aplicação prática em oficina.",
-    bullets: ["Equipamentos especiais", "Melhoria de produto", "Aplicação em oficina"],
+      "Revenda de produtos para motocicletas por canais oficiais da Tecnofusi, com atendimento comercial e disponibilidade conforme estoque.",
+    bullets: ["Produtos de revenda", "Canais oficiais", "Venda online"],
     details:
-      "A linha de motocicletas nasceu da busca por soluções específicas para manutenção, montagem e apoio técnico. O objetivo é transformar problemas recorrentes de oficina em ferramentas mais funcionais, resistentes e fáceis de usar.",
+      "A categoria de motocicletas reúne itens de revenda comercializados pela Tecnofusi. O Instagram da loja funciona como canal de divulgação e atendimento para essa frente comercial e outros itens disponíveis.",
     highlights: [
-      "Ferramentas especiais",
-      "Equipamentos de apoio",
-      "Soluções sob demanda",
-      "Melhorias para manutenção",
-      "Produtos para uso técnico",
-      "Desenvolvimento contínuo"
+      "Itens de revenda",
+      "Atendimento comercial",
+      "Compra por canais oficiais",
+      "Disponibilidade conforme estoque",
+      "Comunicação específica da categoria",
+      "Integração com a venda online"
     ]
   },
   {
     icon: Drill,
+    category: "Suporte técnico",
     title: "Desenvolvimento técnico",
     description:
-      "Atuamos no apoio técnico ao desenvolvimento de peças e soluções industriais, auxiliando na adaptação de componentes, melhoria de processos e viabilidade produtiva para projetos em alumínio fundido e ferramental.",
+      "Apoio técnico para avaliar peças fundidas, ferramentas especiais e melhorias de produto antes da produção, considerando aplicação, material, volume e viabilidade.",
     bullets: ["Análise de viabilidade", "Apoio ao projeto", "Melhoria de processo"],
     details:
       "Atendimento voltado para entender aplicação, material, tolerância, volume e contexto de uso antes da produção. Essa leitura técnica reduz retrabalho e ajuda a escolher o processo mais adequado.",
@@ -168,9 +178,9 @@ export const timeline = [
   },
   {
     year: "2013",
-    title: "Expansão para ferramentas especiais",
+    title: "Ampliação do portfólio técnico e comercial",
     description:
-      "Desenvolvimento de ferramentas e equipamentos para motocicletas, ampliando o portfólio técnico."
+      "Evolução da atuação em ferramentas especiais e canais comerciais, incluindo produtos de revenda para motocicletas."
   },
   {
     year: "2017",
@@ -180,9 +190,9 @@ export const timeline = [
   },
   {
     year: "Hoje",
-    title: "Indústria orientada por precisão",
+    title: "Fundição, ferramentas e venda online",
     description:
-      "Atuação focada em fundição de alumínio coquilhado, ferramentas para motocicletas e desenvolvimento técnico sob demanda."
+      "Atuação focada em fundição de alumínio coquilhado, fabricação de ferramentas especiais, revenda de produtos para motocicletas e canais oficiais de venda online."
   }
 ];
 

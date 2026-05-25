@@ -10,7 +10,7 @@ const marketplaceItems = [
   {
     platform: "Loja Tecnofusi",
     description:
-      "Site oficial da Tecnofusi com catálogo completo de produtos, fundidos e linha de motocicletas.",
+      "Site oficial com produtos da empresa e itens de revenda para motocicletas disponíveis para compra online.",
     href: siteConfig.marketplaces.loja,
     logoSrc: "/images/tecnofusi-logo.webp",
     logoFallback: "Tecnofusi",
@@ -19,7 +19,7 @@ const marketplaceItems = [
   {
     platform: "Mercado Livre",
     description:
-      "Loja oficial com produtos Tecnofusi para fundidos, acessórios e linha de motocicletas.",
+      "Canal oficial para produtos e itens de revenda disponíveis online, com compra direta pelo marketplace.",
     href: siteConfig.marketplaces.mercadoLivre,
     logoSrc: "/images/marketplaces/mercado-livre.png",
     logoFallback: "Mercado Livre",
@@ -28,7 +28,7 @@ const marketplaceItems = [
   {
     platform: "Shopee",
     description:
-      "Canal de venda online para encontrar produtos Tecnofusi com compra rápida.",
+      "Canal de venda online para encontrar produtos e itens de revenda com compra rápida.",
     href: siteConfig.marketplaces.shopee,
     logoSrc: "/images/marketplaces/shopee.webp",
     logoFallback: "Shopee",
@@ -108,8 +108,8 @@ export function Marketplaces() {
           <AnimatedSection>
             <SectionHeading
               eyebrow="Comprar online"
-              title="Canais oficiais para encontrar produtos Tecnofusi."
-              description="Loja própria, Mercado Livre e Shopee reúnem as linhas disponíveis para compra online, sem separar o visitante em links diferentes para cada categoria."
+              title="Canais oficiais para comprar com a Tecnofusi."
+              description="Loja própria, Mercado Livre e Shopee reúnem produtos oficiais, incluindo itens de revenda para motocicletas quando disponíveis."
             />
 
             <div className="mt-7 flex items-center gap-4 rounded-[24px] border border-white/10 bg-white/[0.045] p-5 backdrop-blur-sm">

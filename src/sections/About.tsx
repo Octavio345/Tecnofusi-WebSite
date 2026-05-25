@@ -6,8 +6,8 @@ import { timeline, values } from "@/lib/site";
 
 const pillars = [
   { label: "Fundição", detail: "Alumínio coquilhado" },
-  { label: "Ferramentas", detail: "Linha motocicletas" },
-  { label: "Soluções", detail: "Apoio técnico" }
+  { label: "Revenda", detail: "Produtos motocicletas" },
+  { label: "Venda online", detail: "Canais oficiais" }
 ];
 
 export function About({ compact = false }: { compact?: boolean }) {
@@ -21,7 +21,7 @@ export function About({ compact = false }: { compact?: boolean }) {
               <SectionHeading
                 eyebrow="Quem somos"
                 title="Uma base industrial criada para entregar precisão, prazo e suporte técnico."
-                description="Desde 2011, a Tecnofusi atua em fundição de alumínio coquilhado, ferramentas para motocicletas e desenvolvimento de soluções especiais para demandas industriais."
+                description="Desde 2011, a Tecnofusi atua em fundição de alumínio coquilhado, fabricação de ferramentas especiais, revenda de produtos para motocicletas e venda online por canais oficiais."
               />
               <div className="mt-8">
                 <Button href="/sobre" variant="secondary">
@@ -60,14 +60,21 @@ export function About({ compact = false }: { compact?: boolean }) {
             <SectionHeading
               eyebrow="Sobre a empresa"
               title="Uma operação industrial construída sobre técnica, confiança e continuidade."
-              description="A Tecnofusi nasceu com foco em serviços para terceiros e consolidou sua atuação pela capacidade técnica, postura ética, controle de processo e compromisso com o prazo."
+              description="A Tecnofusi nasceu com foco industrial e consolidou sua atuação pela capacidade técnica, postura ética, controle de processo e compromisso com o prazo."
             />
             <div className="mt-6 grid gap-5 text-base leading-8 text-metal-300">
               <p>
-                A empresa atua em fundição de alumínio coquilhado e
-                desenvolvimento de ferramentas e equipamentos especiais para
-                motocicletas. Quando necessário, conta com apoio de usinagem CNC
-                por empresa parceira do mesmo grupo empresarial.
+                A empresa atua em fundição de alumínio coquilhado, fabricação de
+                ferramentas e equipamentos especiais e venda online de produtos
+                oficiais e itens de revenda. A frente de motocicletas é
+                apresentada como revenda de produtos, com atendimento e
+                disponibilidade pelos canais oficiais.
+              </p>
+              <p>
+                Quando o projeto exige acabamento ou ajuste dimensional, a
+                Tecnofusi pode integrar apoio de usinagem CNC por empresa
+                parceira do mesmo grupo empresarial, mantendo essa etapa como
+                complemento técnico dentro do escopo avaliado.
               </p>
               <p>
                 O atendimento é voltado para empresas que precisam de
