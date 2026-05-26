@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { About } from "@/sections/About";
-import { Credibility } from "@/sections/Credibility";
 
 export const metadata: Metadata = {
   title: "Sobre",
@@ -18,7 +17,6 @@ export default function SobrePage() {
         description="A Tecnofusi consolidou sua atuação em fundição de alumínio coquilhado, fabricação de ferramentas especiais, apoio técnico complementar e canais oficiais de venda."
       />
       <About />
-      <Credibility />
     </main>
   );
 }

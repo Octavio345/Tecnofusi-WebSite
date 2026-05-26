@@ -1,21 +1,11 @@
-import { ArrowUpRight, CheckCircle2, ListChecks } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { Button } from "@/components/Button";
 import { SectionHeading } from "@/components/SectionHeading";
 import { services } from "@/lib/site";
 
-type ServiceDetailListKey = "technicalPoints" | "segments" | "highlights";
-type ServiceWithOptionalLists = (typeof services)[number] &
-  Partial<Record<ServiceDetailListKey, string[]>>;
-
-function getServiceList(service: ServiceWithOptionalLists, key: ServiceDetailListKey) {
-  return service[key];
-}
-
 export function Services({ showIntro = true }: { showIntro?: boolean }) {
-  const showDetails = !showIntro;
-
   return (
     <section className="bg-graphite-950 py-14 lg:py-20">
       <div className="container-premium">
@@ -73,128 +63,23 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
           })}
         </div>
 
-        {showDetails && (
-          <div className="mt-10 grid gap-5">
-            {services.map((service: ServiceWithOptionalLists) => {
-              const Icon = service.icon;
-              const technicalPoints = getServiceList(service, "technicalPoints");
-              const segments = getServiceList(service, "segments");
-              const highlights = getServiceList(service, "highlights");
-              const hasDetailsContent = Boolean(technicalPoints || segments || highlights);
-
-              return (
-                <AnimatedSection
-                  key={`${service.title}-detail`}
-                  className="overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.045] shadow-[0_18px_60px_rgba(0,0,0,0.2)]"
-                >
-                  <div className={hasDetailsContent ? "grid gap-0 lg:grid-cols-[0.9fr_1.1fr]" : ""}>
-                    <div className={hasDetailsContent ? "border-b border-white/10 bg-gradient-to-br from-brand-deep/35 via-white/[0.04] to-transparent p-6 sm:p-8 lg:border-b-0 lg:border-r" : "bg-gradient-to-br from-brand-deep/35 via-white/[0.04] to-transparent p-6 sm:p-8 lg:max-w-3xl"}>
-                      <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-bright/14 text-brand-soft">
-                        <Icon className="h-6 w-6" />
-                      </span>
-                      <h3 className="mt-6 text-2xl font-semibold text-white">
-                        {service.title}
-                      </h3>
-                      <p className="mt-4 text-base leading-8 text-metal-300">
-                        {service.details}
-                      </p>
-                    </div>
-
-                    {hasDetailsContent && (
-                    <div className="grid gap-5 p-6 sm:p-8">
-                      {technicalPoints && (
-                        <div>
-                          <div className="flex items-center gap-3">
-                            <ListChecks className="h-5 w-5 text-brand-soft" />
-                            <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-white">
-                              Propriedades do alumínio
-                            </h4>
-                          </div>
-
-                          <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                            {technicalPoints.map((item) => (
-                              <div
-                                key={item}
-                                className="rounded-2xl border border-white/10 bg-graphite-950/55 p-4 text-sm leading-6 text-metal-200"
-                              >
-                                {item}
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-
-                      {segments && (
-                        <div>
-                          <div className="flex items-center gap-3">
-                            <ListChecks className="h-5 w-5 text-brand-soft" />
-                            <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-white">
-                              Segmentos atendidos
-                            </h4>
-                          </div>
-
-                          <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                            {segments.map((item) => (
-                              <div
-                                key={item}
-                                className="rounded-2xl border border-white/10 bg-graphite-950/55 p-4 text-sm leading-6 text-metal-200"
-                              >
-                                {item}
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-
-                      {highlights && (
-                        <div>
-                          <div className="flex items-center gap-3">
-                            <CheckCircle2 className="h-5 w-5 text-brand-soft" />
-                            <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-white">
-                              Aplicações e vantagens
-                            </h4>
-                          </div>
-
-                          <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                            {highlights.map((item) => (
-                              <div
-                                key={item}
-                                className="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.035] p-4"
-                              >
-                                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-brand-bright" />
-                                <span className="text-sm leading-6 text-metal-200">
-                                  {item}
-                                </span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                    )}
-                  </div>
-                </AnimatedSection>
-              );
-            })}
-
-          </div>
+        {showIntro && (
+          <AnimatedSection className="mt-10 rounded-[28px] border border-white/10 bg-gradient-to-r from-brand-deep/50 via-white/[0.05] to-graphite-800 p-6 sm:p-8 lg:flex lg:items-center lg:justify-between">
+            <div>
+              <h3 className="text-2xl font-semibold text-white">
+                Tem um projeto técnico para avaliar?
+              </h3>
+              <p className="mt-3 max-w-2xl text-sm leading-7 text-metal-300">
+                Envie desenhos, aplicação, material desejado, volume estimado ou
+                uma descrição do problema. A equipe retorna com o caminho mais
+                adequado.
+              </p>
+            </div>
+            <Button href="/contato" className="mt-6 lg:mt-0">
+              Falar com especialista
+            </Button>
+          </AnimatedSection>
         )}
-
-        <AnimatedSection className="mt-10 rounded-[28px] border border-white/10 bg-gradient-to-r from-brand-deep/50 via-white/[0.05] to-graphite-800 p-6 sm:p-8 lg:flex lg:items-center lg:justify-between">
-          <div>
-            <h3 className="text-2xl font-semibold text-white">
-              Tem um projeto técnico para avaliar?
-            </h3>
-            <p className="mt-3 max-w-2xl text-sm leading-7 text-metal-300">
-              Envie desenhos, aplicação, material desejado, volume estimado ou
-              uma descrição do problema. A equipe retorna com o caminho mais
-              adequado.
-            </p>
-          </div>
-          <Button href="/contato" className="mt-6 lg:mt-0">
-            Falar com especialista
-          </Button>
-        </AnimatedSection>
       </div>
     </section>
   );

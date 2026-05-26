@@ -4,8 +4,8 @@ import { useEffect, useState, type CSSProperties } from "react";
 import Image from "next/image";
 import styles from "@/styles/modules/IntroAnimation.module.css";
 
-const LEAVE_DELAY   = 5500;
-const UNMOUNT_DELAY = 6600;
+const LEAVE_DELAY   = 2800;
+const UNMOUNT_DELAY = 3500;
 const LOGO_SRC          = "/images/tecnofusi-logo-animation.webp";
 const FALLBACK_LOGO_SRC = "/images/tecnofusi-logo.webp";
 

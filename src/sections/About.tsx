@@ -2,7 +2,6 @@ import { ImageIcon } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { Button } from "@/components/Button";
 import { SectionHeading } from "@/components/SectionHeading";
-import { timeline, values } from "@/lib/site";
 
 const pillars = [
   { label: "Fundição", detail: "Alumínio coquilhado" },
@@ -124,48 +123,6 @@ export function About({ compact = false }: { compact?: boolean }) {
           </AnimatedSection>
         </div>
 
-        <div className="mt-10 grid gap-4">
-          {timeline.map((item) => (
-            <AnimatedSection
-              key={item.year}
-              className="premium-border rounded-[24px] bg-white/[0.05] p-5 backdrop-blur-xl"
-            >
-              <div className="flex gap-5">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white text-sm font-bold text-brand-deep">
-                  {item.year}
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-7 text-metal-300">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
-          ))}
-        </div>
-
-        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {values.map((item) => {
-            const Icon = item.icon;
-            return (
-              <AnimatedSection
-                key={item.title}
-                className="rounded-[24px] border border-white/10 bg-graphite-950/60 p-6"
-              >
-                <Icon className="h-6 w-6 text-brand-soft" />
-                <h3 className="mt-4 text-lg font-semibold text-white">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-metal-300">
-                  {item.description}
-                </p>
-              </AnimatedSection>
-            );
-          })}
-        </div>
       </div>
     </section>
   );

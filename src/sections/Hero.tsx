@@ -164,13 +164,13 @@ export function Hero() {
                     </div>
 
                     <div className="mt-5 flex items-center gap-4 rounded-3xl border border-white/10 bg-white/[0.045] p-4">
-                      <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full">
+                      <div className="relative h-20 w-20 shrink-0">
                         <Image
-                          src="/images/tecnofusi-logo.webp"
+                          src="/images/tecnofusi-emblem.png"
                           alt="Logo Tecnofusi"
                           fill
-                          sizes="64px"
-                          className="scale-[1.78] object-cover object-center"
+                          sizes="80px"
+                          className="object-contain drop-shadow-[0_12px_30px_rgba(224,20,27,0.26)]"
                         />
                       </div>
 

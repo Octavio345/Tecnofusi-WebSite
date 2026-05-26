@@ -1,24 +1,20 @@
 import {
-  BadgeCheck,
   Cpu,
   Drill,
   Factory,
   Gauge,
   Handshake,
-  Layers3,
   Mail,
   MapPin,
   MessageCircle,
-  Microscope,
   Phone,
   ShieldCheck,
-  Sparkles,
   Timer,
   Wrench
 } from "lucide-react";
 
 const whatsappHref =
-  "https://wa.me/5519981359252?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Tecnofusi%20e%20gostaria%20de%20solicitar%20um%20atendimento.";
+  "https://wa.me/5519993482165?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Tecnofusi%20e%20gostaria%20de%20solicitar%20um%20atendimento.";
 
 export const siteConfig = {
   name: "Tecnofusi",
@@ -26,7 +22,7 @@ export const siteConfig = {
   description:
     "Fundição de alumínio coquilhado, ferramentas especiais, apoio técnico complementar e Loja Tecnofusi.",
   phonePrimary: "(19) 3455-5329",
-  whatsapp: "(19) 98135-9252",
+  whatsapp: "(19) 99348-2165",
   whatsappHref,
   email: "tecnofusi@tecnofusi.com.br",
   address: "Rua Bárbara Rosa Vital, 129 - Condomínio Cintec - Santa Bárbara d'Oeste/SP - 13459-626",
@@ -105,6 +101,22 @@ export const services = [
     ]
   },
   {
+    icon: Drill,
+    category: "Ferramentas especiais",
+    title: "Ferramentas para Motocicletas",
+    description:
+      "Referência na fabricação própria de ferramentas especiais para manutenção e performance desde 2014. Unimos nossa expertise em fundição e usinagem integrada para entregar soluções robustas, com alta precisão e durabilidade para o setor de duas rodas.",
+    bullets: ["Fabricação própria", "Alta precisão", "Duas rodas"],
+    details:
+      "Fabricação própria de ferramentas especiais para manutenção e performance no setor de duas rodas, com foco em precisão, durabilidade e aplicação real.",
+    highlights: [
+      "Ferramentas especiais",
+      "Manutenção e performance",
+      "Alta durabilidade",
+      "Precisão dimensional"
+    ]
+  },
+  {
     icon: Wrench,
     category: "Revenda",
     title: "Loja Tecnofusi",
@@ -120,24 +132,6 @@ export const services = [
       "Disponibilidade conforme estoque",
       "Compra por canais oficiais",
       "Sem vínculo com fabricação própria"
-    ]
-  },
-  {
-    icon: Drill,
-    category: "Suporte técnico",
-    title: "Desenvolvimento técnico",
-    description:
-      "Apoio técnico para avaliar peças fundidas, ferramentas especiais e melhorias de produto antes da produção, considerando aplicação, material, volume e viabilidade.",
-    bullets: ["Análise de viabilidade", "Apoio ao projeto", "Melhoria de processo"],
-    details:
-      "Atendimento voltado para entender aplicação, material, tolerância, volume e contexto de uso antes da produção. Essa leitura técnica reduz retrabalho e ajuda a escolher o processo mais adequado.",
-    highlights: [
-      "Análise de aplicação",
-      "Apoio na escolha do processo",
-      "Adaptação de componentes",
-      "Viabilidade produtiva",
-      "Orientação por custo-benefício",
-      "Desenvolvimento sob demanda"
     ]
   }
 ];
@@ -167,40 +161,6 @@ export const differentiators = [
     description:
       "Atendimento técnico próximo para alinhar aplicação, ligas metálicas e tolerâncias ao contexto real de uso do produto."
   }
-];
-
-export const timeline = [
-  {
-    year: "2011",
-    title: "Fundação da Tecnofusi",
-    description:
-      "Início das atividades com foco em capacidade técnica, seriedade comercial e serviços para terceiros."
-  },
-  {
-    year: "2013",
-    title: "Ampliação do portfólio técnico e comercial",
-    description:
-      "Evolução da atuação em ferramentas especiais e abertura de canais comerciais para itens de revenda."
-  },
-  {
-    year: "2017",
-    title: "Reconhecimento por eficiência",
-    description:
-      "Consolidação da reputação por eficácia, prazo e fidelização de clientes industriais."
-  },
-  {
-    year: "Hoje",
-    title: "Fundição, ferramentas e Loja Tecnofusi",
-    description:
-      "Atuação focada em fundição de alumínio coquilhado, fabricação de ferramentas especiais, apoio técnico complementar e venda por canais oficiais."
-  }
-];
-
-export const values = [
-  { icon: Microscope, title: "Precisão", description: "Detalhe técnico como critério de decisão." },
-  { icon: BadgeCheck, title: "Confiança", description: "Ética, seriedade e compromisso com entrega." },
-  { icon: Layers3, title: "Consistência", description: "Processos repetíveis para qualidade estável." },
-  { icon: Sparkles, title: "Inovação útil", description: "Tecnologia aplicada onde gera resultado real." }
 ];
 
 export const contactItems = [
