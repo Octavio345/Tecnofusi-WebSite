@@ -22,9 +22,9 @@ const photos = [
     icon: Building2
   },
   {
-    title: "Revenda para motocicletas",
+    title: "Revenda online",
     description:
-      "Itens de revenda para motocicletas divulgados e comercializados por canais oficiais da Tecnofusi.",
+      "Peças para motocicletas e outros itens comerciais divulgados nos canais da loja.",
     src: "/images/site/revenda-motocicletas.jpg",
     alt: "Componentes de motocicleta representando itens de revenda Tecnofusi",
     icon: Wrench
@@ -33,7 +33,7 @@ const photos = [
 
 export function OperationsGallery() {
   return (
-    <section className="bg-graphite-950 py-20 lg:py-24">
+    <section className="bg-graphite-950 py-14 lg:py-20">
       <div className="container-premium">
         <AnimatedSection>
           <SectionHeading
@@ -43,7 +43,7 @@ export function OperationsGallery() {
           />
         </AnimatedSection>
 
-        <div className="mt-12 grid gap-5 lg:grid-cols-3">
+        <div className="mt-8 grid gap-5 lg:grid-cols-3">
           {photos.map((photo) => {
             const Icon = photo.icon;
 

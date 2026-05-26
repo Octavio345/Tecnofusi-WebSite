@@ -21,7 +21,7 @@
 
 :root {
   color-scheme: dark;
-  --header-height: 84px;
+  --header-height: 76px;
 }
 
 @media (max-width: 640px) {

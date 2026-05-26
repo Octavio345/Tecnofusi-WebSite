@@ -14,7 +14,7 @@ export default function ContatoPage() {
       <PageHero
         eyebrow="Contato"
         title="Fale com a equipe técnica da Tecnofusi."
-        description="Envie sua demanda de fundição de alumínio, ferramenta especial, item de revenda ou apoio técnico complementar. A equipe retorna com orientação objetiva."
+        description="Envie sua demanda de fundição, ferramenta especial, apoio técnico complementar ou dúvida sobre a Loja Tecnofusi. A equipe retorna com orientação objetiva."
       />
       <Contact />
     </main>

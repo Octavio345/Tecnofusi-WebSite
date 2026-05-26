@@ -4,7 +4,7 @@ import { differentiators } from "@/lib/site";
 
 export function Differentials() {
   return (
-    <section className="bg-graphite-950 py-20 lg:py-28">
+    <section className="bg-graphite-950 py-14 lg:py-20">
       <div className="container-premium">
         <AnimatedSection>
           <SectionHeading
@@ -14,7 +14,7 @@ export function Differentials() {
           />
         </AnimatedSection>
 
-        <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {differentiators.map((item) => {
             const Icon = item.icon;
             return (

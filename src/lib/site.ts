@@ -24,7 +24,7 @@ export const siteConfig = {
   name: "Tecnofusi",
   url: "https://tecnofusi.com.br",
   description:
-    "Fundição de alumínio coquilhado, fabricação de ferramentas especiais e venda online de produtos oficiais e itens de revenda.",
+    "Fundição de alumínio coquilhado, ferramentas especiais, apoio técnico complementar e Loja Tecnofusi.",
   phonePrimary: "(19) 3455-5329",
   whatsapp: "(19) 98135-9252",
   whatsappHref,
@@ -59,8 +59,8 @@ export const navItems = [
 export const stats = [
   { value: "2011", label: "Fundação e início das operações" },
   { value: "B2B", label: "Atendimento industrial e técnico para empresas" },
-  { value: "2", label: "Frentes industriais: fundição e ferramentas" },
-  { value: "Online", label: "Venda por loja própria e marketplaces oficiais" }
+  { value: "2", label: "Frentes principais: fundição e ferramentas" },
+  { value: "Online", label: "Loja própria e marketplaces oficiais" }
 ];
 
 export const services = [
@@ -107,19 +107,19 @@ export const services = [
   {
     icon: Wrench,
     category: "Revenda",
-    title: "Produtos para motocicletas",
+    title: "Loja Tecnofusi",
     description:
-      "Revenda de produtos para motocicletas por canais oficiais da Tecnofusi, com atendimento comercial e disponibilidade conforme estoque.",
-    bullets: ["Produtos de revenda", "Canais oficiais", "Venda online"],
+      "Itens comerciais de revenda ficam nos canais da loja, com atendimento comercial e disponibilidade conforme estoque.",
+    bullets: ["Motocicletas", "Outros itens", "Loja oficial"],
     details:
-      "A categoria de motocicletas reúne itens de revenda comercializados pela Tecnofusi. O Instagram da loja funciona como canal de divulgação e atendimento para essa frente comercial e outros itens disponíveis.",
+      "A Loja Tecnofusi concentra a frente comercial de revenda: peças para motocicletas quando disponíveis e outros itens anunciados pela empresa. Essa comunicação é separada da fabricação própria.",
     highlights: [
-      "Itens de revenda",
-      "Atendimento comercial",
-      "Compra por canais oficiais",
+      "Linha comercial separada da produção",
+      "Catálogo online",
+      "Instagram e Facebook da loja",
       "Disponibilidade conforme estoque",
-      "Comunicação específica da categoria",
-      "Integração com a venda online"
+      "Compra por canais oficiais",
+      "Sem vínculo com fabricação própria"
     ]
   },
   {
@@ -180,7 +180,7 @@ export const timeline = [
     year: "2013",
     title: "Ampliação do portfólio técnico e comercial",
     description:
-      "Evolução da atuação em ferramentas especiais e canais comerciais, incluindo produtos de revenda para motocicletas."
+      "Evolução da atuação em ferramentas especiais e abertura de canais comerciais para itens de revenda."
   },
   {
     year: "2017",
@@ -190,9 +190,9 @@ export const timeline = [
   },
   {
     year: "Hoje",
-    title: "Fundição, ferramentas e venda online",
+    title: "Fundição, ferramentas e Loja Tecnofusi",
     description:
-      "Atuação focada em fundição de alumínio coquilhado, fabricação de ferramentas especiais, revenda de produtos para motocicletas e canais oficiais de venda online."
+      "Atuação focada em fundição de alumínio coquilhado, fabricação de ferramentas especiais, apoio técnico complementar e venda por canais oficiais."
   }
 ];
 

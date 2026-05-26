@@ -2,7 +2,7 @@
 
 Site institucional da Tecnofusi, desenvolvido com Next.js, React, TypeScript, Tailwind CSS, Framer Motion e Lucide Icons.
 
-O site organiza a comunicação da empresa em quatro pontos: fundição de alumínio coquilhado, fabricação de ferramentas especiais, apoio complementar de usinagem CNC por empresa parceira do mesmo grupo e venda online por canais oficiais. Produtos para motocicletas entram como revenda.
+O site organiza a comunicação da empresa em quatro pontos: fundição de alumínio coquilhado, fabricação de ferramentas especiais, apoio complementar de usinagem CNC por empresa parceira do mesmo grupo e venda online pela Loja Tecnofusi. Peças para motocicletas e outros itens comerciais entram como revenda.
 
 ## O que precisa instalar
 
@@ -116,8 +116,8 @@ Imagens servidas diretamente pelo site, incluindo logo, fotos da empresa e marca
 - Fundição de alumínio coquilhado é a atividade principal.
 - Ferramentas especiais entram como frente industrial.
 - Usinagem CNC aparece como apoio complementar, feito por empresa parceira do mesmo grupo quando o projeto exige.
-- Produtos para motocicletas entram como revenda, sem comunicação de fabricação própria.
-- Instagram e Facebook da antiga frente de motocicletas aparecem no site como canais da Loja.
+- Peças para motocicletas e outros itens comerciais entram como revenda, sem comunicação de fabricação própria.
+- Instagram e Facebook ligados à revenda aparecem no site como canais da Loja Tecnofusi.
 - Jardinagem não tem área própria no site. Quando houver produto nessa categoria, ele deve entrar na comunicação geral de fundição ou venda online.
 
 ## Conteúdo e manutenção

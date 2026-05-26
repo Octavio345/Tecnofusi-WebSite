@@ -7,12 +7,12 @@ import { navItems, siteConfig } from "@/lib/site";
 export function Footer() {
   return (
     <footer className="relative border-t border-white/10 bg-graphite-950">
-      <div className="container-premium py-12 lg:py-16">
-        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.7fr_1fr]">
+      <div className="container-premium py-10 lg:py-12">
+        <div className="grid gap-8 lg:grid-cols-[1.2fr_0.7fr_1fr]">
           <div>
             <Logo />
             <p className="mt-5 max-w-md text-sm leading-7 text-metal-300">
-              Fundição de alumínio coquilhado, fabricação de ferramentas especiais e venda online por canais oficiais, com precisão, prazo e suporte técnico.
+              Atuação industrial em alumínio e ferramentas especiais, com suporte técnico, prazo e canais comerciais oficiais.
             </p>
             <SocialLinks className="mt-6" />
           </div>
@@ -52,7 +52,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-metal-500 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-5 text-xs text-metal-500 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Tecnofusi. Todos os direitos reservados.</p>
           <p>Site Criado por Octávio Augusto - Github (Octavio345).</p>
         </div>

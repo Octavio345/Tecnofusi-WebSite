@@ -4,9 +4,10 @@ import { cn } from "@/utils/cn";
 
 type LogoProps = {
   className?: string;
+  imageClassName?: string;
 };
 
-export function Logo({ className }: LogoProps) {
+export function Logo({ className, imageClassName }: LogoProps) {
   return (
     <Link
       href="/"
@@ -18,7 +19,7 @@ export function Logo({ className }: LogoProps) {
         alt="Tecnofusi"
         width={1323}
         height={743}
-        className="h-40 w-auto translate-y-2 sm:h-48"
+        className={cn("h-28 w-auto translate-y-1 sm:h-32", imageClassName)}
         priority
         sizes="500px"
       />

@@ -9,9 +9,9 @@ type PageHeroProps = {
 
 export function PageHero({ eyebrow, title, description }: PageHeroProps) {
   return (
-    <section className="relative isolate overflow-hidden pt-[calc(var(--header-height)+20px)]">
+    <section className="relative isolate overflow-hidden pt-[calc(var(--header-height)+12px)]">
       <TechBackground />
-      <div className="container-premium relative z-10 pb-16 pt-8 lg:pb-28 lg:pt-14">
+      <div className="container-premium relative z-10 pb-10 pt-5 lg:pb-16 lg:pt-8">
         <AnimatedSection className="w-full max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-brand-soft">
             {eyebrow}
@@ -27,7 +27,7 @@ export function PageHero({ eyebrow, title, description }: PageHeroProps) {
           >
             {title}
           </h1>
-          <p className="mt-6 max-w-3xl text-base leading-8 text-metal-300 sm:text-lg">
+          <p className="mt-4 max-w-3xl text-base leading-8 text-metal-300 sm:text-lg">
             {description}
           </p>
         </AnimatedSection>

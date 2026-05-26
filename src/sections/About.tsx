@@ -6,24 +6,24 @@ import { timeline, values } from "@/lib/site";
 
 const pillars = [
   { label: "Fundição", detail: "Alumínio coquilhado" },
-  { label: "Revenda", detail: "Produtos motocicletas" },
-  { label: "Venda online", detail: "Canais oficiais" }
+  { label: "Ferramentas", detail: "Projetos especiais" },
+  { label: "Loja", detail: "Revenda online" }
 ];
 
 export function About({ compact = false }: { compact?: boolean }) {
   if (compact) {
     return (
-      <section className="relative overflow-hidden bg-graphite-900 py-20 lg:py-24">
+      <section className="relative overflow-hidden bg-graphite-900 py-14 lg:py-20">
         <div className="absolute inset-0 bg-tech-grid bg-[size:42px_42px] opacity-[0.08]" aria-hidden="true" />
         <div className="container-premium relative">
-          <div className="grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+          <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
             <AnimatedSection>
               <SectionHeading
                 eyebrow="Quem somos"
                 title="Uma base industrial criada para entregar precisão, prazo e suporte técnico."
-                description="Desde 2011, a Tecnofusi atua em fundição de alumínio coquilhado, fabricação de ferramentas especiais, revenda de produtos para motocicletas e venda online por canais oficiais."
+                description="Desde 2011, a Tecnofusi une fundição de alumínio coquilhado, fabricação de ferramentas especiais, apoio técnico complementar e venda online por canais oficiais."
               />
-              <div className="mt-8">
+              <div className="mt-6">
                 <Button href="/sobre" variant="secondary">
                   Conhecer a empresa
                 </Button>
@@ -52,23 +52,29 @@ export function About({ compact = false }: { compact?: boolean }) {
   }
 
   return (
-    <section className="relative overflow-hidden bg-graphite-900 py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-graphite-900 py-14 lg:py-20">
       <div className="absolute inset-0 bg-tech-grid bg-[size:42px_42px] opacity-[0.08]" aria-hidden="true" />
       <div className="container-premium relative">
-        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <AnimatedSection>
             <SectionHeading
               eyebrow="Sobre a empresa"
               title="Uma operação industrial construída sobre técnica, confiança e continuidade."
               description="A Tecnofusi nasceu com foco industrial e consolidou sua atuação pela capacidade técnica, postura ética, controle de processo e compromisso com o prazo."
             />
-            <div className="mt-6 grid gap-5 text-base leading-8 text-metal-300">
+            <div className="mt-5 grid gap-4 text-base leading-8 text-metal-300">
               <p>
                 A empresa atua em fundição de alumínio coquilhado, fabricação de
-                ferramentas e equipamentos especiais e venda online de produtos
-                oficiais e itens de revenda. A frente de motocicletas é
-                apresentada como revenda de produtos, com atendimento e
-                disponibilidade pelos canais oficiais.
+                ferramentas e equipamentos especiais. A loja reúne
+                produtos disponíveis para venda online, incluindo peças para
+                motocicletas e outros itens de revenda quando houver estoque.
+              </p>
+              <p>
+                Desde a fundação, atende terceiros com foco em peças fundidas
+                por gravidade em alumínio, mantendo padrões rígidos de
+                qualidade, compromisso com prazos e custo competitivo. A
+                parceria no aprimoramento de processos e no desenvolvimento de
+                novos projetos também faz parte do atendimento técnico.
               </p>
               <p>
                 Quando o projeto exige acabamento ou ajuste dimensional, a
@@ -82,7 +88,7 @@ export function About({ compact = false }: { compact?: boolean }) {
                 e uma relação comercial séria do primeiro contato até a entrega.
               </p>
             </div>
-            <div className="mt-8">
+            <div className="mt-6">
               <Button href="/servicos" variant="secondary">
                 Ver áreas de atuação
               </Button>
@@ -118,7 +124,7 @@ export function About({ compact = false }: { compact?: boolean }) {
           </AnimatedSection>
         </div>
 
-        <div className="mt-14 grid gap-4">
+        <div className="mt-10 grid gap-4">
           {timeline.map((item) => (
             <AnimatedSection
               key={item.year}
@@ -141,7 +147,7 @@ export function About({ compact = false }: { compact?: boolean }) {
           ))}
         </div>
 
-        <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {values.map((item) => {
             const Icon = item.icon;
             return (

@@ -20,9 +20,9 @@ const metrics = [
 
 export function Credibility() {
   return (
-    <section className="bg-graphite-900 py-20 lg:py-28">
+    <section className="bg-graphite-900 py-14 lg:py-20">
       <div className="container-premium">
-        <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <AnimatedSection>
             <SectionHeading
               eyebrow="Autoridade técnica"
@@ -47,7 +47,7 @@ export function Credibility() {
           </AnimatedSection>
         </div>
 
-        <div className="mt-12 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
           {items.map((item) => (
             <AnimatedSection key={item} className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4">
               <span className="h-2 w-2 rounded-full bg-brand-bright" />

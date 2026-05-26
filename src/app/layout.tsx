@@ -26,13 +26,14 @@ export const metadata: Metadata = {
     template: "%s | Tecnofusi"
   },
   description:
-    "Tecnofusi: fundição de alumínio coquilhado, fabricação de ferramentas especiais e venda online por canais oficiais.",
+    "Tecnofusi: fundição de alumínio coquilhado, ferramentas especiais, apoio técnico complementar e Loja Tecnofusi.",
   keywords: [
     "Tecnofusi",
     "fundição de alumínio coquilhado",
     "fundição de alumínio",
-    "produtos para motocicletas",
-    "revenda para motocicletas",
+    "Loja Tecnofusi",
+    "peças para motocicletas em revenda",
+    "itens de revenda",
     "ferramentas especiais",
     "venda online Tecnofusi",
     "Santa Bárbara D'Oeste"
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tecnofusi | Fundição e ferramentas especiais",
     description:
-      "Fundição de alumínio coquilhado, fabricação de ferramentas especiais e venda online por canais oficiais.",
+      "Fundição de alumínio coquilhado, ferramentas especiais, apoio técnico complementar e Loja Tecnofusi.",
     url: siteConfig.url,
     siteName: "Tecnofusi",
     locale: "pt_BR",
@@ -58,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tecnofusi | Fundição e ferramentas especiais",
     description:
-      "Fundição de alumínio coquilhado, ferramentas especiais e canais oficiais de venda online.",
+      "Fundição de alumínio coquilhado, ferramentas especiais, apoio técnico complementar e Loja Tecnofusi.",
     images: ["/images/tecnofusi-logo.png"]
   },
   alternates: {

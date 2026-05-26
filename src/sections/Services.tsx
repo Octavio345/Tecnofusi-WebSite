@@ -17,19 +17,19 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
   const showDetails = !showIntro;
 
   return (
-    <section className="bg-graphite-950 py-20 lg:py-28">
+    <section className="bg-graphite-950 py-14 lg:py-20">
       <div className="container-premium">
         {showIntro && (
           <AnimatedSection>
             <SectionHeading
               eyebrow="Serviços"
               title="Áreas de atuação apresentadas com clareza técnica."
-              description="A Tecnofusi concentra sua atuação em fundição de alumínio coquilhado, fabricação de ferramentas especiais, revenda de produtos para motocicletas e venda online por canais oficiais."
+              description="A Tecnofusi separa com clareza o que fabrica, o que apoia tecnicamente e o que entra nos canais comerciais."
             />
           </AnimatedSection>
         )}
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2">
+        <div className="mt-8 grid gap-5 md:grid-cols-2">
           {services.map((service) => {
             const Icon = service.icon;
 
@@ -74,7 +74,7 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
         </div>
 
         {showDetails && (
-          <div className="mt-14 grid gap-5">
+          <div className="mt-10 grid gap-5">
             {services.map((service: ServiceWithOptionalLists) => {
               const Icon = service.icon;
               const technicalPoints = getServiceList(service, "technicalPoints");
@@ -180,7 +180,7 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
           </div>
         )}
 
-        <AnimatedSection className="mt-12 rounded-[28px] border border-white/10 bg-gradient-to-r from-brand-deep/50 via-white/[0.05] to-graphite-800 p-6 sm:p-8 lg:flex lg:items-center lg:justify-between">
+        <AnimatedSection className="mt-10 rounded-[28px] border border-white/10 bg-gradient-to-r from-brand-deep/50 via-white/[0.05] to-graphite-800 p-6 sm:p-8 lg:flex lg:items-center lg:justify-between">
           <div>
             <h3 className="text-2xl font-semibold text-white">
               Tem um projeto técnico para avaliar?

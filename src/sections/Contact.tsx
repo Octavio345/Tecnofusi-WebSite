@@ -10,7 +10,7 @@ export function Contact() {
   const wazeRoute = `https://waze.com/ul?q=${siteConfig.mapsQuery}&navigate=yes`;
 
   return (
-    <section className="bg-graphite-950 py-20 lg:py-28">
+    <section className="bg-graphite-950 py-14 lg:py-20">
       <div className="container-premium">
         <AnimatedSection>
           <SectionHeading
@@ -20,7 +20,7 @@ export function Contact() {
           />
         </AnimatedSection>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-[1fr_1.05fr]">
+        <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_1.05fr]">
           <AnimatedSection className="grid gap-4">
             {contactItems.map((item) => {
               const Icon = item.icon;
@@ -54,7 +54,7 @@ export function Contact() {
           </AnimatedSection>
         </div>
 
-        <AnimatedSection className="mt-10 overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.045]">
+        <AnimatedSection className="mt-8 overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.045]">
           <div className="map-frame h-[360px]">
             <iframe
               title="Mapa da Tecnofusi"

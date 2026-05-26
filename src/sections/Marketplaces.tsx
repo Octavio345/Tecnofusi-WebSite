@@ -10,7 +10,7 @@ const marketplaceItems = [
   {
     platform: "Loja Tecnofusi",
     description:
-      "Site oficial com produtos da empresa e itens de revenda para motocicletas disponíveis para compra online.",
+      "Canal próprio para produtos disponíveis, peças de motocicleta em revenda e outros itens comerciais.",
     href: siteConfig.marketplaces.loja,
     logoSrc: "/images/tecnofusi-logo.webp",
     logoFallback: "Tecnofusi",
@@ -19,7 +19,7 @@ const marketplaceItems = [
   {
     platform: "Mercado Livre",
     description:
-      "Canal oficial para produtos e itens de revenda disponíveis online, com compra direta pelo marketplace.",
+      "Marketplace oficial para itens anunciados pela empresa com compra direta pela plataforma.",
     href: siteConfig.marketplaces.mercadoLivre,
     logoSrc: "/images/marketplaces/mercado-livre.png",
     logoFallback: "Mercado Livre",
@@ -28,7 +28,7 @@ const marketplaceItems = [
   {
     platform: "Shopee",
     description:
-      "Canal de venda online para encontrar produtos e itens de revenda com compra rápida.",
+      "Alternativa de compra online para produtos disponíveis no catálogo da Tecnofusi.",
     href: siteConfig.marketplaces.shopee,
     logoSrc: "/images/marketplaces/shopee.webp",
     logoFallback: "Shopee",
@@ -102,17 +102,17 @@ function MarketplaceLogo({
 
 export function Marketplaces() {
   return (
-    <section className="bg-graphite-950 py-20 lg:py-24">
+    <section className="bg-graphite-950 py-14 lg:py-20">
       <div className="container-premium">
-        <div className="grid gap-10 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
+        <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
           <AnimatedSection>
             <SectionHeading
               eyebrow="Comprar online"
               title="Canais oficiais para comprar com a Tecnofusi."
-              description="Loja própria, Mercado Livre e Shopee reúnem produtos oficiais, incluindo itens de revenda para motocicletas quando disponíveis."
+              description="A loja própria concentra itens de revenda. Mercado Livre e Shopee funcionam como canais oficiais de compra online."
             />
 
-            <div className="mt-7 flex items-center gap-4 rounded-[24px] border border-white/10 bg-white/[0.045] p-5 backdrop-blur-sm">
+            <div className="mt-5 flex items-center gap-4 rounded-[24px] border border-white/10 bg-white/[0.045] p-5 backdrop-blur-sm">
               <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-bright/12 text-brand-soft">
                 <Store className="h-5 w-5" />
               </span>
