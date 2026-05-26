@@ -38,8 +38,8 @@ export function OperationsGallery() {
         <AnimatedSection>
           <SectionHeading
             eyebrow="Operação"
-            title="Fotos reais da estrutura e dos processos Tecnofusi."
-            description="Um recorte direto do que sustenta as entregas: fundição de alumínio, estrutura técnica, fabricação de ferramentas especiais e canais comerciais oficiais."
+            title="Estrutura, processos e canais comerciais Tecnofusi."
+            description="Um recorte visual do que sustenta as entregas: fundição de alumínio, estrutura técnica, fabricação de ferramentas especiais e revenda online por canais oficiais."
           />
         </AnimatedSection>
 
