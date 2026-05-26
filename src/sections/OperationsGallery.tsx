@@ -25,8 +25,8 @@ const photos = [
     title: "Revenda para motocicletas",
     description:
       "Itens de revenda para motocicletas divulgados e comercializados por canais oficiais da Tecnofusi.",
-    src: null,
-    alt: "Produtos de revenda Tecnofusi para motocicletas",
+    src: "/images/site/revenda-motocicletas.jpg",
+    alt: "Componentes de motocicleta representando itens de revenda Tecnofusi",
     icon: Wrench
   }
 ];
