@@ -20,22 +20,26 @@ const processSteps = [
   {
     number: "01",
     title: "Análise técnica",
-    description: "Avaliamos aplicação, material, tolerância e volume."
+    description:
+      "Avaliamos aplicação, ligas de alumínio, tolerâncias e volume para garantir viabilidade técnica."
   },
   {
     number: "02",
-    title: "Processo ideal",
-    description: "Definimos fundição, ferramental ou apoio complementar."
+    title: "Desenvolvimento de Ferramental",
+    description:
+      "Definimos o processo de fundição ideal e projetamos os moldes e dispositivos necessários."
   },
   {
     number: "03",
-    title: "Produção controlada",
-    description: "Execução com foco em repetibilidade, prazo e qualidade."
+    title: "Produção e Fundição",
+    description:
+      "Execução com rigoroso controle de repetibilidade, garantindo prazos e integridade das peças."
   },
   {
     number: "04",
-    title: "Envio nacional",
-    description: "Produtos preparados para entrega em todo o Brasil."
+    title: "Logística Integrada",
+    description:
+      "Produtos prontos para montagem ou revenda, com distribuição estratégica para todo o Brasil."
   }
 ];
 

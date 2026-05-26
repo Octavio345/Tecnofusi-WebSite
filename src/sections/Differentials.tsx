@@ -9,8 +9,8 @@ export function Differentials() {
         <AnimatedSection>
           <SectionHeading
             eyebrow="Diferenciais"
-            title="O que sustenta uma entrega industrial confiável?"
-            description="Prazo, qualidade, capacidade produtiva e suporte técnico precisam aparecer antes da proposta comercial. É isso que reduz risco para quem compra serviços industriais."
+            title="Por que escolher a Tecnofusi para seu projeto?"
+            description="Mais do que uma proposta comercial, entregamos previsibilidade operacional e suporte técnico especializado para mitigar riscos e garantir a eficiência da sua cadeia produtiva."
           />
         </AnimatedSection>
 

@@ -6,15 +6,15 @@ const items = [
   "Peças fundidas em alumínio coquilhado",
   "Controle rigoroso de processo",
   "Apoio técnico ao desenvolvimento de soluções",
-  "Atendimento consultivo para empresas",
+  "Atendimento especializado para lotes industriais",
   "Desenvolvimento de ferramental e equipamentos especiais",
-  "Venda online por canais oficiais da empresa"
+  "Presença em canais de venda direta e marketplaces oficiais"
 ];
 
 const metrics = [
-  { icon: Factory, label: "Especialidade", value: "Alumínio coquilhado" },
-  { icon: Ruler, label: "Controle", value: "Processo técnico" },
-  { icon: Layers3, label: "Atuação", value: "Fundição + ferramentas" },
+  { icon: Factory, label: "Estrutura", value: "Fábrica própria" },
+  { icon: Ruler, label: "Controle", value: "Qualidade técnica" },
+  { icon: Layers3, label: "Atuação", value: "Fundição e metalurgia" },
   { icon: BadgeCheck, label: "Comercialização", value: "Canais oficiais" }
 ];
 

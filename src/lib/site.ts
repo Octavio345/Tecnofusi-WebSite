@@ -57,10 +57,10 @@ export const navItems = [
 ];
 
 export const stats = [
-  { value: "2011", label: "Fundação e início das operações" },
-  { value: "B2B", label: "Atendimento industrial e técnico para empresas" },
-  { value: "2", label: "Frentes principais: fundição e ferramentas" },
-  { value: "Online", label: "Loja própria e marketplaces oficiais" }
+  { value: "2011", label: "Experiência consolidada no mercado de fundição e metalurgia" },
+  { value: "Fábrica Própria", label: "Controle total do processo produtivo e garantia de qualidade técnica" },
+  { value: "Foco B2B", label: "Atendimento especializado para lotes industriais e projetos sob demanda" },
+  { value: "Online", label: "Presença estratégica em canais de venda direta e marketplaces oficiais" }
 ];
 
 export const services = [
@@ -145,27 +145,27 @@ export const services = [
 export const differentiators = [
   {
     icon: ShieldCheck,
-    title: "Padrão rígido de qualidade",
+    title: "Rigor Técnico e Qualidade",
     description:
-      "Processos pensados para consistência, rastreabilidade e redução de retrabalho em demandas técnicas."
+      "Processos padronizados com foco em consistência, rastreabilidade e eliminação de não-conformidades em demandas industriais."
   },
   {
     icon: Timer,
-    title: "Compromisso com prazo",
+    title: "Pontualidade e Planejamento",
     description:
-      "Execução orientada por planejamento produtivo para atender clientes que dependem de previsibilidade."
+      "Execução orientada por um cronograma produtivo rígido, garantindo a previsibilidade que sua linha de montagem exige."
   },
   {
     icon: Gauge,
-    title: "Eficiência operacional",
+    title: "Excelência Operacional",
     description:
-      "Estrutura preparada para entregar melhor custo-benefício sem perder o controle técnico do processo."
+      "Infraestrutura otimizada para oferecer o melhor custo-benefício, mantendo o controle absoluto sobre cada etapa da fundição."
   },
   {
     icon: Handshake,
-    title: "Atendimento consultivo",
+    title: "Engenharia Consultiva",
     description:
-      "Atendimento próximo para entender aplicação, material, tolerância e contexto real de uso."
+      "Atendimento técnico próximo para alinhar aplicação, ligas metálicas e tolerâncias ao contexto real de uso do produto."
   }
 ];
 

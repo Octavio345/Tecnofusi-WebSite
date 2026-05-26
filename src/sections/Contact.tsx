@@ -15,8 +15,8 @@ export function Contact() {
         <AnimatedSection>
           <SectionHeading
             eyebrow="Contato"
-            title="Pronto para discutir uma peça, lote ou solução técnica?"
-            description="Entre em contato para orçamento, viabilidade produtiva ou desenvolvimento sob demanda."
+            title="Fale com a TECNOFUSI FUNDIDOS"
+            description="Orçamentos para peças avulsas, lotes industriais e desenvolvimento de moldes."
           />
         </AnimatedSection>
 
@@ -40,8 +40,8 @@ export function Contact() {
             })}
 
             <div className="grid gap-3 sm:grid-cols-2">
-              <Button href={siteConfig.whatsappHref} external>
-                WhatsApp
+              <Button href={siteConfig.whatsappHref} external className="whitespace-normal px-4 text-center leading-5">
+                Fale com a TECNOFUSI FUNDIDOS
               </Button>
               <Button href={`mailto:${siteConfig.email}`} variant="secondary" external>
                 Enviar e-mail
