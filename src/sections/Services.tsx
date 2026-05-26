@@ -1,5 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
-
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { Button } from "@/components/Button";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -28,17 +26,13 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
                 key={service.title}
                 className="group rounded-[28px] border border-white/10 bg-white/[0.045] p-6 transition duration-300 hover:-translate-y-1 hover:border-brand-bright/50 hover:bg-white/[0.075] sm:p-8"
               >
-                <div className="flex items-start justify-between gap-6">
-                  <div className="flex items-center gap-4">
-                    <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-bright/12 text-brand-soft transition duration-300 group-hover:bg-brand-bright group-hover:text-white">
-                      <Icon className="h-6 w-6" />
-                    </div>
-                    <span className="text-xs font-semibold uppercase tracking-[0.18em] text-metal-500">
-                      {service.category}
-                    </span>
+                <div className="flex items-center gap-4">
+                  <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-bright/12 text-brand-soft transition duration-300 group-hover:bg-brand-bright group-hover:text-white">
+                    <Icon className="h-6 w-6" />
                   </div>
-
-                  <ArrowUpRight className="h-5 w-5 text-metal-500 transition duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-white" />
+                  <span className="text-xs font-semibold uppercase tracking-[0.18em] text-metal-500">
+                    {service.category}
+                  </span>
                 </div>
 
                 <h3 className="mt-6 text-2xl font-semibold text-white">
