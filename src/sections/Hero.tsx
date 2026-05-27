@@ -12,7 +12,7 @@ import {
 
 import { fadeUp, staggerContainer } from "@/animations/variants";
 import { Button } from "@/components/Button";
-import { SocialLinks } from "@/components/SocialLinks";
+import { HighlightedText } from "@/components/HighlightedText";
 import { TechBackground } from "@/components/TechBackground";
 import { siteConfig, stats } from "@/lib/site";
 
@@ -103,7 +103,7 @@ export function Hero() {
               </h1>
 
               <p className="mt-4 max-w-3xl text-[15px] leading-7 text-metal-300 sm:text-lg sm:leading-8">
-                A Tecnofusi atua na fabricação de peças em alumínio coquilhado, desenvolvimento de ferramentas e comercialização de produtos técnicos por canais próprios e marketplaces.
+                <HighlightedText text="A Tecnofusi atua na fabricação de peças em alumínio coquilhado, desenvolvimento de ferramentas e comercialização de produtos técnicos por canais próprios e marketplaces." />
               </p>
 
               <div className="mt-5 grid gap-3 sm:flex sm:flex-row">
@@ -116,7 +116,7 @@ export function Hero() {
                 </Button>
               </div>
 
-              <div className="mt-5 grid min-w-0 gap-3 rounded-[24px] border border-white/10 bg-graphite-950/45 p-3 shadow-[0_18px_60px_rgba(0,0,0,0.22)] backdrop-blur-xl sm:p-4 lg:mt-6 xl:grid-cols-[0.82fr_1.18fr] xl:items-start">
+              <div className="mt-5 max-w-xl rounded-[24px] border border-white/10 bg-graphite-950/45 p-3 shadow-[0_18px_60px_rgba(0,0,0,0.22)] backdrop-blur-xl sm:p-4 lg:mt-6">
                 <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.07] via-white/[0.035] to-brand-deep/10 p-3 sm:p-4">
                   <div className="flex gap-3">
                     <span className="mt-0.5 inline-flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-graphite-950/70 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_12px_30px_rgba(0,0,0,0.22)]">
@@ -129,17 +129,6 @@ export function Hero() {
                         Produtos enviados para todo o Brasil com qualidade máxima e compromisso com prazo.
                       </p>
                     </div>
-                  </div>
-                </div>
-
-                <div className="min-w-0 rounded-2xl border border-white/10 bg-white/[0.025] p-3 sm:border-0 sm:bg-transparent sm:p-0 xl:border-l xl:border-white/10 xl:pl-5">
-                  <p className="text-sm font-semibold text-white">Visite nossas redes</p>
-                  <p className="mt-1 text-sm leading-6 text-metal-300">
-                    Acompanhe Fundidos, Loja, vídeos e atendimento.
-                  </p>
-
-                  <div className="mt-4">
-                    <SocialLinks variant="hero" />
                   </div>
                 </div>
               </div>

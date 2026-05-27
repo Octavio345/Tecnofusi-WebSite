@@ -2,21 +2,22 @@ import Image from "next/image";
 import { Building2, Factory, Wrench } from "lucide-react";
 
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { HighlightedText } from "@/components/HighlightedText";
 import { SectionHeading } from "@/components/SectionHeading";
 
 const photos = [
   {
-    title: "Fundição em alumínio",
+    title: "Registro produtivo",
     description:
-      "Processo produtivo com foco em repetibilidade, controle e qualidade de acabamento.",
+      "Imagem da rotina industrial que ajuda a apresentar a operação de forma visual.",
     src: "/images/site/processo-fundicao.jpg",
     alt: "Forno industrial usado no processo de fundição de alumínio da Tecnofusi",
     icon: Factory
   },
   {
-    title: "Estrutura Tecnofusi",
+    title: "Entrada da empresa",
     description:
-      "Base operacional voltada para atendimento técnico, organização produtiva e compromisso com prazo.",
+      "Referência física da unidade para reforçar presença, endereço e estrutura própria.",
     src: "/images/site/fachada-tecnofusi.jpg",
     alt: "Fachada da Tecnofusi",
     icon: Building2
@@ -24,7 +25,7 @@ const photos = [
   {
     title: "Revenda online",
     description:
-      "Peças para motocicletas e outros itens comerciais divulgados nos canais da loja.",
+      "Imagem de apoio para identificar a revenda de peças para motocicletas, com componentes e acessórios disponíveis online.",
     src: "/images/site/revenda-motocicletas.jpg",
     alt: "Componentes de motocicleta representando itens de revenda Tecnofusi",
     icon: Wrench
@@ -38,8 +39,8 @@ export function OperationsGallery() {
         <AnimatedSection>
           <SectionHeading
             eyebrow="Operação"
-            title="Estrutura, processos e canais comerciais Tecnofusi."
-            description="Um recorte visual do que sustenta as entregas: fundição de alumínio, estrutura técnica, fabricação de ferramentas especiais e revenda online por canais oficiais."
+            title="Um recorte visual da Tecnofusi."
+            description="A home usa imagens para orientar a primeira impressão; os detalhes técnicos, institucionais e comerciais ficam nas páginas correspondentes."
           />
         </AnimatedSection>
 
@@ -73,10 +74,10 @@ export function OperationsGallery() {
 
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-white">
-                    {photo.title}
+                    <HighlightedText text={photo.title} />
                   </h3>
                   <p className="mt-3 text-sm leading-7 text-metal-300">
-                    {photo.description}
+                    <HighlightedText text={photo.description} />
                   </p>
                 </div>
               </AnimatedSection>

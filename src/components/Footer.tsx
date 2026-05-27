@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { HighlightedText } from "@/components/HighlightedText";
 import { Logo } from "@/components/Logo";
 import { SocialLinks } from "@/components/SocialLinks";
 import { navItems, siteConfig } from "@/lib/site";
@@ -12,7 +13,7 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-5 max-w-md text-sm leading-7 text-metal-300">
-              Atuação industrial em alumínio e ferramentas especiais, com suporte técnico, prazo e canais comerciais oficiais.
+              <HighlightedText text="Atuação industrial em alumínio e ferramentas especiais, com suporte técnico, prazo e canais comerciais oficiais." />
             </p>
             <SocialLinks className="mt-6" />
           </div>
@@ -53,7 +54,10 @@ export function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-5 text-xs text-metal-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Tecnofusi. Todos os direitos reservados.</p>
+          <p>
+            © {new Date().getFullYear()}{" "}
+            <HighlightedText text="Tecnofusi" />. Todos os direitos reservados.
+          </p>
           <p>Site Criado por Octávio Augusto - Github (Octavio345).</p>
         </div>
       </div>

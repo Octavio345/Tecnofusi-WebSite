@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ExternalLink, PackageSearch, Store } from "lucide-react";
 
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { HighlightedText } from "@/components/HighlightedText";
 import { SectionHeading } from "@/components/SectionHeading";
 import { siteConfig } from "@/lib/site";
 import { cn } from "@/utils/cn";
@@ -92,7 +93,7 @@ function MarketplaceLogo({
             alt={fallback}
             fill
             sizes="58px"
-            className="object-contain rounded-xl"
+            className="rounded-xl object-contain"
           />
         </div>
       )}
@@ -102,7 +103,7 @@ function MarketplaceLogo({
 
 export function Marketplaces() {
   return (
-    <section className="bg-graphite-950 py-14 lg:py-20">
+    <section id="comprar-online" className="scroll-mt-24 bg-graphite-950 py-14 lg:py-20">
       <div className="container-premium">
         <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
           <AnimatedSection>
@@ -154,11 +155,11 @@ export function Marketplaces() {
                     </span>
 
                     <h3 className="mt-4 text-xl font-semibold text-white">
-                      {item.platform}
+                      <HighlightedText text={item.platform} />
                     </h3>
 
                     <p className="mt-3 text-sm leading-7 text-metal-300">
-                      {item.description}
+                      <HighlightedText text={item.description} />
                     </p>
                   </div>
                 </a>

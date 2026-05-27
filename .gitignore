@@ -8,6 +8,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+.codex/
+codex_tmp_facade/
 FOTOS
 FOTOS E VÍDEOS - 2026
 FOTOS E VÍDEOS 2

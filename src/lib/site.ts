@@ -103,15 +103,15 @@ export const services = [
   {
     icon: Drill,
     category: "Ferramentas especiais",
-    title: "Ferramentas para Motocicletas",
+    title: "Ferramental técnico",
     description:
-      "Referência na fabricação própria de ferramentas especiais para manutenção e performance desde 2014. Unimos nossa expertise em fundição e usinagem integrada para entregar soluções robustas, com alta precisão e durabilidade para o setor de duas rodas.",
-    bullets: ["Fabricação própria", "Alta precisão", "Duas rodas"],
+      "Desenvolvimento de moldes, dispositivos e ferramentas especiais ligados aos projetos industriais, com foco em precisão, durabilidade e aplicação real.",
+    bullets: ["Moldes", "Dispositivos", "Aplicação industrial"],
     details:
-      "Fabricação própria de ferramentas especiais para manutenção e performance no setor de duas rodas, com foco em precisão, durabilidade e aplicação real.",
+      "Ferramental técnico aplicado à produção, ao desenvolvimento de moldes e a dispositivos especiais para demandas industriais.",
     highlights: [
       "Ferramentas especiais",
-      "Manutenção e performance",
+      "Moldes e dispositivos",
       "Alta durabilidade",
       "Precisão dimensional"
     ]
@@ -121,8 +121,8 @@ export const services = [
     category: "Revenda",
     title: "Loja Tecnofusi",
     description:
-      "Itens comerciais de revenda ficam nos canais da loja, com atendimento comercial e disponibilidade conforme estoque.",
-    bullets: ["Motocicletas", "Outros itens", "Loja oficial"],
+      "Peças para motocicletas e outros itens comerciais de revenda ficam nos canais da loja, com atendimento comercial e disponibilidade conforme estoque.",
+    bullets: ["Peças para motocicletas", "Outros itens", "Loja oficial"],
     details:
       "A Loja Tecnofusi concentra a frente comercial de revenda: peças para motocicletas quando disponíveis e outros itens anunciados pela empresa. Essa comunicação é separada da fabricação própria.",
     highlights: [

@@ -3,6 +3,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { Button } from "@/components/Button";
 import { ContactForm } from "@/components/ContactForm";
 import { SectionHeading } from "@/components/SectionHeading";
+import { SocialLinks } from "@/components/SocialLinks";
 import { contactItems, siteConfig } from "@/lib/site";
 
 export function Contact() {
@@ -46,6 +47,16 @@ export function Contact() {
               <Button href={`mailto:${siteConfig.email}`} variant="secondary" external>
                 Enviar e-mail
               </Button>
+            </div>
+
+            <div className="rounded-[22px] border border-white/10 bg-white/[0.045] p-5">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-metal-500">
+                Redes sociais
+              </p>
+              <p className="mt-2 text-sm leading-7 text-metal-300">
+                Acompanhe os canais oficiais da empresa e da loja.
+              </p>
+              <SocialLinks className="mt-5" />
             </div>
           </AnimatedSection>
 

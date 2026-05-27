@@ -1,4 +1,5 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { HighlightedText } from "@/components/HighlightedText";
 import { TechBackground } from "@/components/TechBackground";
 
 type PageHeroProps = {
@@ -25,10 +26,10 @@ export function PageHero({ eyebrow, title, description }: PageHeroProps) {
             "
             lang="pt-BR"
           >
-            {title}
+            <HighlightedText text={title} />
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-8 text-metal-300 sm:text-lg">
-            {description}
+            <HighlightedText text={description} />
           </p>
         </AnimatedSection>
       </div>

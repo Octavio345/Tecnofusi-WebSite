@@ -1,23 +1,12 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { Button } from "@/components/Button";
-import { SectionHeading } from "@/components/SectionHeading";
+import { HighlightedText } from "@/components/HighlightedText";
 import { services } from "@/lib/site";
 
-export function Services({ showIntro = true }: { showIntro?: boolean }) {
+export function Services() {
   return (
     <section className="bg-graphite-950 py-14 lg:py-20">
       <div className="container-premium">
-        {showIntro && (
-          <AnimatedSection>
-            <SectionHeading
-              eyebrow="Serviços"
-              title="Áreas de atuação apresentadas com clareza técnica."
-              description="A Tecnofusi separa com clareza o que fabrica, o que apoia tecnicamente e o que entra nos canais comerciais."
-            />
-          </AnimatedSection>
-        )}
-
-        <div className="mt-8 grid gap-5 md:grid-cols-2">
+        <div className="grid gap-5 md:grid-cols-2">
           {services.map((service) => {
             const Icon = service.icon;
 
@@ -36,10 +25,10 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
                 </div>
 
                 <h3 className="mt-6 text-2xl font-semibold text-white">
-                  {service.title}
+                  <HighlightedText text={service.title} />
                 </h3>
                 <p className="mt-4 text-base leading-8 text-metal-300">
-                  {service.description}
+                  <HighlightedText text={service.description} />
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-2">
@@ -56,24 +45,6 @@ export function Services({ showIntro = true }: { showIntro?: boolean }) {
             );
           })}
         </div>
-
-        {showIntro && (
-          <AnimatedSection className="mt-10 rounded-[28px] border border-white/10 bg-gradient-to-r from-brand-deep/50 via-white/[0.05] to-graphite-800 p-6 sm:p-8 lg:flex lg:items-center lg:justify-between">
-            <div>
-              <h3 className="text-2xl font-semibold text-white">
-                Tem um projeto técnico para avaliar?
-              </h3>
-              <p className="mt-3 max-w-2xl text-sm leading-7 text-metal-300">
-                Envie desenhos, aplicação, material desejado, volume estimado ou
-                uma descrição do problema. A equipe retorna com o caminho mais
-                adequado.
-              </p>
-            </div>
-            <Button href="/contato" className="mt-6 lg:mt-0">
-              Falar com especialista
-            </Button>
-          </AnimatedSection>
-        )}
       </div>
     </section>
   );

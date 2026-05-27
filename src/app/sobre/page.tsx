@@ -13,8 +13,8 @@ export default function SobrePage() {
     <main>
       <PageHero
         eyebrow="Empresa"
-        title="Uma indústria técnica, séria e orientada por resultado."
-        description="A Tecnofusi consolidou sua atuação em fundição de alumínio coquilhado, fabricação de ferramentas especiais, apoio técnico complementar e canais oficiais de venda."
+        title="Sobre a Tecnofusi."
+        description="Conheça a trajetória, a estrutura e os pilares que sustentam a atuação técnica da empresa."
       />
       <About />
     </main>
