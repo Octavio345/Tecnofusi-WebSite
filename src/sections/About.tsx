@@ -39,7 +39,7 @@ const overviewCards = [
     icon: Store,
     title: "Loja Tecnofusi",
     description:
-      "Peças para motocicletas e outros itens comerciais ficam na frente de revenda, conforme disponibilidade."
+      "Ferramentas para motocicletas e outros itens comerciais ficam na frente de revenda, conforme disponibilidade."
   }
 ];
 
@@ -61,33 +61,6 @@ const commitments = [
     title: "Parceria técnica",
     description:
       "A empresa atua junto ao cliente no aprimoramento de processos e no desenvolvimento de novos projetos."
-  }
-];
-
-const timeline = [
-  {
-    year: "2011",
-    title: "Fundação e início das atividades",
-    description:
-      "Início das atividades com foco no mercado para terceiros, capacidade técnica, ética e compromisso com prazos."
-  },
-  {
-    year: "2014",
-    title: "Ampliação técnica e comercial",
-    description:
-      "Evolução da estrutura técnica e organização de produtos comerciais em canais de venda."
-  },
-  {
-    year: "2017",
-    title: "Consolidação no mercado",
-    description:
-      "Fortalecimento da reputação por eficiência, eficácia e fidelização de clientes."
-  },
-  {
-    year: "Hoje",
-    title: "Operação técnica e venda online",
-    description:
-      "Fundição, ferramentas, apoio técnico complementar e canais comerciais oficiais compõem a atuação atual."
   }
 ];
 
@@ -218,39 +191,6 @@ export function About() {
                 </AnimatedSection>
               );
             })}
-          </div>
-        </div>
-
-        <div className="mt-10 grid gap-6 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
-          <AnimatedSection>
-            <SectionHeading
-              eyebrow="Linha do tempo"
-              title="Anos que explicam a evolução da empresa."
-              description="Um resumo direto da origem, consolidação e atuação atual da Tecnofusi."
-            />
-          </AnimatedSection>
-
-          <div className="grid gap-4">
-            {timeline.map((item) => (
-              <AnimatedSection
-                key={item.year}
-                className="premium-border rounded-[24px] bg-white/[0.05] p-5 backdrop-blur-xl"
-              >
-                <div className="grid gap-4 sm:grid-cols-[86px_1fr] sm:items-start">
-                  <div className="flex h-16 w-20 items-center justify-center rounded-2xl bg-white text-sm font-bold text-brand-deep shadow-[0_14px_40px_rgba(255,255,255,0.08)]">
-                    {item.year}
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-white">
-                      <HighlightedText text={item.title} />
-                    </h3>
-                    <p className="mt-2 text-sm leading-7 text-metal-300">
-                      <HighlightedText text={item.description} />
-                    </p>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
           </div>
         </div>
 

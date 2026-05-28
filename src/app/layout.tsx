@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "fundição de alumínio coquilhado",
     "fundição de alumínio",
     "Loja Tecnofusi",
-    "peças para motocicletas em revenda",
+    "ferramentas para motocicletas em revenda",
     "itens de revenda",
     "ferramentas especiais",
     "venda online Tecnofusi",

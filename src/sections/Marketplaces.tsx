@@ -11,7 +11,7 @@ const marketplaceItems = [
   {
     platform: "Loja Tecnofusi",
     description:
-      "Canal próprio para produtos disponíveis, peças de motocicleta em revenda e outros itens comerciais.",
+      "Canal próprio para produtos disponíveis, ferramentas para motocicletas em revenda e outros itens comerciais.",
     href: siteConfig.marketplaces.loja,
     logoSrc: "/images/tecnofusi-logo.webp",
     logoFallback: "Tecnofusi",

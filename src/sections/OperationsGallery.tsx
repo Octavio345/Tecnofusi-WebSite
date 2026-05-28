@@ -10,7 +10,7 @@ const photos = [
     title: "Registro produtivo",
     description:
       "Imagem da rotina industrial que ajuda a apresentar a operação de forma visual.",
-    src: "/images/site/processo-fundicao.jpg",
+    src: "/images/site/processo-fundicao.png",
     alt: "Forno industrial usado no processo de fundição de alumínio da Tecnofusi",
     icon: Factory
   },
@@ -25,9 +25,9 @@ const photos = [
   {
     title: "Revenda online",
     description:
-      "Imagem de apoio para identificar a revenda de peças para motocicletas, com componentes e acessórios disponíveis online.",
+      "Imagem de apoio para identificar a revenda de ferramentas para motocicletas e outros itens disponíveis online.",
     src: "/images/site/revenda-motocicletas.jpg",
-    alt: "Componentes de motocicleta representando itens de revenda Tecnofusi",
+    alt: "Ferramentas para motocicletas representando itens de revenda Tecnofusi",
     icon: Wrench
   }
 ];
