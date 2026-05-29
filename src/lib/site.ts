@@ -67,7 +67,7 @@ export const services = [
     description:
       "Produção de peças em alumínio coquilhado para demandas industriais e produtos próprios, com controle técnico, repetibilidade e qualidade uniforme.",
     image: {
-      src: "/images/site/servico-fundicao.jpg",
+      src: "/images/site/servico-fundicao.png",
       alt: "Lingotes e forno em processo de fundição de alumínio coquilhado"
     },
     bullets: ["Alumínio coquilhado", "Produção técnica", "Qualidade uniforme"],
@@ -95,7 +95,7 @@ export const services = [
     description:
       "Quando uma peça ou ferramenta exige acabamento, ajustes ou tolerâncias específicas, a Tecnofusi pode integrar apoio de usinagem CNC por empresa parceira do mesmo grupo.",
     image: {
-      src: "/images/site/servico-usinagem.jpg",
+      src: "/images/site/servico-usinagem.png",
       alt: "Área de usinagem com equipamentos CNC do mesmo grupo empresarial"
     },
     bullets: ["Empresa parceira", "Mesmo grupo empresarial", "Etapa complementar"],

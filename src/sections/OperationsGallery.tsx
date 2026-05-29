@@ -10,7 +10,7 @@ const photos = [
     title: "Registro produtivo",
     description:
       "Imagem da rotina industrial que ajuda a apresentar a operação de forma visual.",
-    src: "/images/site/processo-fundicao.jpg",
+    src: "/images/site/processo-fundicao.png",
     alt: "Forno e lingotes de alumínio em etapa produtiva da Tecnofusi",
     icon: Factory
   },
