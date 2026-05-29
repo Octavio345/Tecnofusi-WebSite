@@ -92,45 +92,15 @@ export function About() {
     <section className="relative overflow-hidden bg-graphite-900 py-14 lg:py-20">
       <div className="absolute inset-0 bg-tech-grid bg-[size:42px_42px] opacity-[0.08]" aria-hidden="true" />
       <div className="container-premium relative">
-        <div className="grid gap-7">
-          <AnimatedSection>
+        <div className="grid gap-8 lg:grid-cols-[0.95fr_0.85fr] lg:items-stretch">
+          <AnimatedSection className="flex flex-col gap-6">
             <SectionHeading
               eyebrow="Sobre a empresa"
               title="Uma operação industrial construída sobre técnica, confiança e continuidade."
               description="A Tecnofusi nasceu com foco industrial e consolidou sua atuação pela capacidade técnica, postura ética, controle de processo e compromisso com o prazo."
             />
-          </AnimatedSection>
 
-          <AnimatedSection className="premium-border mx-auto w-full max-w-4xl overflow-hidden rounded-[30px] bg-white/[0.05] p-3 shadow-premium backdrop-blur-xl sm:p-4">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[24px] bg-graphite-950">
-              <Image
-                src="/images/site/fachada-tecnofusi.jpg"
-                alt="Fachada da Tecnofusi"
-                fill
-                sizes="(min-width: 1280px) 1180px, 100vw"
-                className="object-contain"
-                priority
-              />
-            </div>
-
-            <div className="grid gap-5 p-4 sm:p-5 lg:grid-cols-[0.72fr_1.28fr] lg:items-center">
-              <div className="flex items-center gap-4">
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.08] text-brand-soft">
-                  <ImageIcon className="h-5 w-5" />
-                </span>
-                <h3 className="text-2xl font-semibold text-white">
-                  <HighlightedText text="Fachada da Tecnofusi" />
-                </h3>
-              </div>
-              <p className="text-sm leading-7 text-metal-300">
-                Estrutura física, presença regional e operação voltada para
-                atender empresas com seriedade técnica.
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2">
               {overviewCards.map((item) => {
                 const Icon = item.icon;
 
@@ -153,15 +123,63 @@ export function About() {
               })}
             </div>
 
-            <div className="mt-6">
+            <div>
               <Button href="/servicos" variant="secondary">
                 Ver áreas de atuação
               </Button>
             </div>
           </AnimatedSection>
+
+          <AnimatedSection className="premium-border flex h-full flex-col gap-4 overflow-hidden rounded-[28px] bg-white/[0.045] p-3 shadow-premium backdrop-blur-xl lg:self-stretch">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[22px] bg-graphite-950">
+              <Image
+                src="/images/site/fachada-tecnofusi.jpg"
+                alt="Fachada da Tecnofusi"
+                fill
+                sizes="(min-width: 1024px) 42vw, 100vw"
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-graphite-950/95 via-graphite-950/60 to-transparent p-4 sm:p-5">
+                <div className="flex items-start gap-3">
+                  <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.08] text-brand-soft">
+                    <ImageIcon className="h-5 w-5" />
+                  </span>
+                  <div>
+                    <h3 className="text-xl font-semibold text-white sm:text-2xl">
+                      <HighlightedText text="Fachada da Tecnofusi" />
+                    </h3>
+                    <p className="mt-2 max-w-md text-sm leading-6 text-metal-300">
+                      Estrutura física, presença regional e operação voltada para atender empresas com seriedade técnica.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid flex-1 gap-3 sm:grid-cols-3 lg:grid-cols-1">
+              {[
+                ["2011", "Fundação da empresa e início das atividades."],
+                ["Fábrica própria", "Controle do processo produtivo e qualidade técnica."],
+                ["B2B", "Atendimento especializado para lotes e projetos sob demanda."]
+              ].map(([title, description]) => (
+                <div
+                  key={title}
+                  className="rounded-[20px] border border-white/10 bg-graphite-950/55 p-4"
+                >
+                  <p className="text-base font-semibold text-white">
+                    <HighlightedText text={title} />
+                  </p>
+                  <p className="mt-1 text-sm leading-6 text-metal-300">
+                    <HighlightedText text={description} />
+                  </p>
+                </div>
+              ))}
+            </div>
+          </AnimatedSection>
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
+        <div className="mt-12 grid gap-6 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
           <AnimatedSection>
             <SectionHeading
               eyebrow="Compromisso"

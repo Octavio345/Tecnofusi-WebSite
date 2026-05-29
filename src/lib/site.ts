@@ -66,6 +66,10 @@ export const services = [
     title: "Fundição de alumínio coquilhado",
     description:
       "Produção de peças em alumínio coquilhado para demandas industriais e produtos próprios, com controle técnico, repetibilidade e qualidade uniforme.",
+    image: {
+      src: "/images/site/servico-fundicao.jpg",
+      alt: "Lingotes e forno em processo de fundição de alumínio coquilhado"
+    },
     bullets: ["Alumínio coquilhado", "Produção técnica", "Qualidade uniforme"],
     details:
       "A fundição de alumínio coquilhado é a base produtiva da Tecnofusi. Ela atende demandas de terceiros e produtos fabricados pela empresa, com aplicação em diferentes peças fundidas e foco em qualidade repetível.",
@@ -90,6 +94,10 @@ export const services = [
     title: "Usinagem CNC complementar",
     description:
       "Quando uma peça ou ferramenta exige acabamento, ajustes ou tolerâncias específicas, a Tecnofusi pode integrar apoio de usinagem CNC por empresa parceira do mesmo grupo.",
+    image: {
+      src: "/images/site/servico-usinagem.jpg",
+      alt: "Etapa complementar de acabamento e apoio técnico em peça metálica"
+    },
     bullets: ["Empresa parceira", "Mesmo grupo empresarial", "Etapa complementar"],
     details:
       "A usinagem CNC entra como etapa complementar quando o projeto exige acabamento, ajuste dimensional ou integração entre peça fundida e aplicação final. Esse apoio é realizado por empresa parceira do mesmo grupo empresarial e integrado ao atendimento quando fizer sentido técnico.",
@@ -106,6 +114,10 @@ export const services = [
     title: "Ferramentas para Motocicletas",
     description:
       "Referência na fabricação própria de ferramentas especiais para manutenção e performance desde 2014. Unimos nossa expertise em fundição e usinagem integrada para entregar soluções robustas, com alta precisão e durabilidade para o setor de duas rodas.",
+    image: {
+      src: "/images/site/revenda-motocicletas.jpg",
+      alt: "Motocicleta diante de painel com ferramentas especiais"
+    },
     bullets: ["Fabricação própria", "Alta precisão", "Duas rodas"],
     details:
       "Fabricação própria de ferramentas especiais para manutenção e performance no setor de duas rodas, com foco em precisão, durabilidade e aplicação real.",
@@ -122,6 +134,10 @@ export const services = [
     title: "Loja Tecnofusi",
     description:
       "Ferramentas para motocicletas e outros itens comerciais de revenda ficam nos canais da loja, com atendimento comercial e disponibilidade conforme estoque.",
+    image: {
+      src: "/images/site/loja-tecnofusi.jpg",
+      alt: "Arte da Loja Tecnofusi com Mercado Livre, Shopee e canais oficiais"
+    },
     bullets: ["Ferramentas para motocicletas", "Outros itens", "Loja oficial"],
     details:
       "A Loja Tecnofusi concentra a frente comercial de revenda: ferramentas para motocicletas quando disponíveis e outros itens anunciados pela empresa. Essa comunicação é separada da fabricação própria.",
