@@ -96,7 +96,7 @@ export const services = [
       "Quando uma peça ou ferramenta exige acabamento, ajustes ou tolerâncias específicas, a Tecnofusi pode integrar apoio de usinagem CNC por empresa parceira do mesmo grupo.",
     image: {
       src: "/images/site/servico-usinagem.jpg",
-      alt: "Etapa complementar de acabamento e apoio técnico em peça metálica"
+      alt: "Área de usinagem com equipamentos CNC do mesmo grupo empresarial"
     },
     bullets: ["Empresa parceira", "Mesmo grupo empresarial", "Etapa complementar"],
     details:
