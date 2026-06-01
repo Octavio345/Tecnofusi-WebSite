@@ -124,10 +124,6 @@ export function Header() {
                 </Link>
               );
             })}
-
-            <Button className="mt-3 w-full" href={siteConfig.whatsappHref} external>
-              Solicitar orçamento
-            </Button>
           </nav>
         </div>
         </div>

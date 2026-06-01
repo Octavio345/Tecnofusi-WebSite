@@ -14,7 +14,7 @@ import { fadeUp, staggerContainer } from "@/animations/variants";
 import { Button } from "@/components/Button";
 import { HighlightedText } from "@/components/HighlightedText";
 import { TechBackground } from "@/components/TechBackground";
-import { siteConfig, stats } from "@/lib/site";
+import { stats } from "@/lib/site";
 
 const processSteps = [
   {
@@ -107,10 +107,6 @@ export function Hero() {
               </p>
 
               <div className="mt-5 grid gap-3 sm:flex sm:flex-row">
-                <Button href={siteConfig.whatsappHref} external className="w-full sm:w-auto sm:min-w-56">
-                  Solicitar orçamento
-                </Button>
-
                 <Button href="/servicos" variant="secondary" className="w-full sm:w-auto sm:min-w-48">
                   Ver serviços
                 </Button>

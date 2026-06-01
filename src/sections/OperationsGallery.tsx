@@ -7,27 +7,27 @@ import { SectionHeading } from "@/components/SectionHeading";
 
 const photos = [
   {
-    title: "Registro produtivo",
+    title: "Produção industrial",
     description:
-      "Imagem da rotina industrial que ajuda a apresentar a operação de forma visual.",
+      "Peças em alumínio coquilhado produzidas com controle técnico, repetibilidade e foco em qualidade.",
     src: "/images/site/processo-fundicao.png",
-    alt: "Forno e lingotes de alumínio em etapa produtiva da Tecnofusi",
+    alt: "Etapa produtiva de fundição de alumínio da Tecnofusi",
     icon: Factory
   },
   {
-    title: "Entrada da empresa",
+    title: "Onde estamos",
     description:
-      "Referência física da unidade para reforçar presença, endereço e estrutura própria.",
+      "Rua Bárbara Rosa Vital, 129 - Condomínio Cintec - Santa Bárbara d'Oeste/SP - 13459-626.",
     src: "/images/site/fachada-tecnofusi.jpg",
-    alt: "Fachada da Tecnofusi",
+    alt: "Unidade física da Tecnofusi",
     icon: Building2
   },
   {
-    title: "Revenda online",
+    title: "Loja Tecnofusi",
     description:
-      "Imagem de apoio para representar a frente de motocicletas e ferramentas da Loja Tecnofusi.",
+      "Canais oficiais para venda online, marketplaces e itens de revenda comercializados pela loja.",
     src: "/images/site/revenda-motocicletas.jpg",
-    alt: "Motocicleta diante de painel com ferramentas para representar a Loja Tecnofusi",
+    alt: "Motocicleta e painel de ferramentas para representar a Loja Tecnofusi",
     icon: Wrench
   }
 ];
@@ -38,9 +38,9 @@ export function OperationsGallery() {
       <div className="container-premium">
         <AnimatedSection>
           <SectionHeading
-            eyebrow="Operação"
-            title="Um recorte visual da Tecnofusi."
-            description="A home usa imagens para orientar a primeira impressão; os detalhes técnicos, institucionais e comerciais ficam nas páginas correspondentes."
+            eyebrow="Visão geral"
+            title="Quem somos, onde estamos e como vendemos."
+            description="Uma apresentação direta da operação: produção em alumínio coquilhado, estrutura própria e canais oficiais da Loja Tecnofusi."
           />
         </AnimatedSection>
 
