@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { Button } from "@/components/Button";
 import { HighlightedText } from "@/components/HighlightedText";
 import { services } from "@/lib/site";
 
@@ -11,6 +12,7 @@ export function Services() {
         <div className="grid gap-5 md:grid-cols-2">
           {services.map((service) => {
             const Icon = service.icon;
+            const hasStoreLink = service.title === "Loja Tecnofusi";
 
             return (
               <AnimatedSection
@@ -55,6 +57,14 @@ export function Services() {
                       </span>
                     ))}
                   </div>
+
+                  {hasStoreLink && (
+                    <div className="mt-7">
+                      <Button href="/#comprar-online" variant="secondary">
+                        Ver lojas
+                      </Button>
+                    </div>
+                  )}
                 </div>
               </AnimatedSection>
             );
