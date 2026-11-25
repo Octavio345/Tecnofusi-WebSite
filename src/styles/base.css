@@ -35,6 +35,11 @@ textarea {
 }
 
 @media (max-width: 640px) {
+  body:has(form:focus-within) .floating-whatsapp {
+    opacity: 0;
+    pointer-events: none;
+  }
+
   body {
     background:
       radial-gradient(circle at 12% 5%, rgba(224, 20, 27, 0.22), transparent 34%),

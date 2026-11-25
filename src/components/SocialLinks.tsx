@@ -50,23 +50,9 @@ const socialItems = [
     icon: <InstagramIcon />
   },
   {
-    href: siteConfig.socials.instagramLoja,
-    title: "Instagram",
-    subtitle: "Loja",
-    tone: "instagram" as const,
-    icon: <InstagramIcon />
-  },
-  {
     href: siteConfig.socials.facebookFundidos,
     title: "Facebook",
     subtitle: "Fundidos",
-    tone: "facebook" as const,
-    icon: <FacebookIcon />
-  },
-  {
-    href: siteConfig.socials.facebookLoja,
-    title: "Facebook",
-    subtitle: "Loja",
     tone: "facebook" as const,
     icon: <FacebookIcon />
   },

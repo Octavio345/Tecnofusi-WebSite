@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import {
-  ArrowUpRight,
   CircuitBoard,
   Factory,
   Gauge,
@@ -14,7 +13,7 @@ import { fadeUp, staggerContainer } from "@/animations/variants";
 import { Button } from "@/components/Button";
 import { HighlightedText } from "@/components/HighlightedText";
 import { TechBackground } from "@/components/TechBackground";
-import { stats } from "@/lib/site";
+import { siteConfig, stats } from "@/lib/site";
 
 const processSteps = [
   {
@@ -39,7 +38,7 @@ const processSteps = [
     number: "04",
     title: "Logística Integrada",
     description:
-      "Produtos prontos para montagem ou revenda, com distribuição estratégica para todo o Brasil."
+      "Peças industriais preparadas para entrega conforme os requisitos de cada projeto."
   }
 ];
 
@@ -99,16 +98,16 @@ export function Hero() {
                 <span className="text-brand-soft [text-shadow:0_0_28px_rgba(224,20,27,0.28)]">
                   fundição de alumínio
                 </span>{" "}
-                e ferramentas especiais
+                para peças industriais sob demanda
               </h1>
 
               <p className="mt-4 max-w-3xl text-[15px] leading-7 text-metal-300 sm:text-lg sm:leading-8">
-                <HighlightedText text="A Tecnofusi atua na fabricação de peças em alumínio coquilhado, desenvolvimento de ferramentas e comercialização de produtos técnicos por canais próprios e marketplaces." />
+                <HighlightedText text="Fabricamos peças industriais em alumínio coquilhado a partir de desenhos e projetos técnicos, com análise da aplicação e do volume solicitado." />
               </p>
 
               <div className="mt-5 grid gap-3 sm:flex sm:flex-row">
-                <Button href="/servicos" variant="secondary" className="w-full sm:w-auto sm:min-w-48">
-                  Ver serviços
+                <Button href="/fundicao-de-aluminio" variant="secondary" className="w-full sm:w-auto sm:min-w-48">
+                  Conheça a fundição
                 </Button>
               </div>
 
@@ -122,7 +121,7 @@ export function Hero() {
                     <div className="min-w-0">
                       <p className="text-sm font-semibold text-white">Entrega nacional</p>
                       <p className="mt-1 text-sm font-medium leading-6 text-metal-300">
-                        Produtos enviados para todo o Brasil com qualidade máxima e compromisso com prazo.
+                        Peças produzidas sob demanda e preparadas para entrega conforme o projeto aprovado.
                       </p>
                     </div>
                   </div>
@@ -200,13 +199,9 @@ export function Hero() {
                       })}
                     </div>
 
-                    <a
-                      href="/contato"
-                      className="focus-ring mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-white/12 bg-white/[0.07] px-5 text-sm font-semibold text-white transition duration-300 hover:border-brand-bright/60 hover:bg-brand-bright"
-                    >
+                    <Button href={siteConfig.whatsappHref} external variant="secondary" className="mt-5 w-full">
                       Enviar projeto para análise
-                      <ArrowUpRight className="h-4 w-4" />
-                    </a>
+                    </Button>
                   </div>
                 </div>
               </div>

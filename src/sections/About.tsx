@@ -6,7 +6,6 @@ import {
   Layers3,
   Microscope,
   Sparkles,
-  Store,
   Wrench
 } from "lucide-react";
 import Image from "next/image";
@@ -36,10 +35,10 @@ const overviewCards = [
       "Análise de viabilidade, aplicação, material e necessidades de acabamento antes da produção."
   },
   {
-    icon: Store,
-    title: "Loja Tecnofusi",
+    icon: Factory,
+    title: "Peças industriais sob demanda",
     description:
-      "Ferramentas para motocicletas e outros itens comerciais ficam na frente de revenda, conforme disponibilidade."
+      "Produção orientada por desenhos, aplicação e volume solicitado pelo cliente."
   }
 ];
 

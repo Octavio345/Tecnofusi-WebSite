@@ -12,7 +12,6 @@ export function Services() {
         <div className="grid gap-5 md:grid-cols-2">
           {services.map((service) => {
             const Icon = service.icon;
-            const hasStoreLink = service.title === "Loja Tecnofusi";
 
             return (
               <AnimatedSection
@@ -58,17 +57,13 @@ export function Services() {
                     ))}
                   </div>
 
-                  {hasStoreLink && (
-                    <div className="mt-7">
-                      <Button href="/#comprar-online" variant="secondary">
-                        Ver lojas
-                      </Button>
-                    </div>
-                  )}
                 </div>
               </AnimatedSection>
             );
           })}
+        </div>
+        <div className="mt-8">
+          <Button href="/fundicao-de-aluminio" variant="secondary">Conheça o processo de fundição</Button>
         </div>
       </div>
     </section>

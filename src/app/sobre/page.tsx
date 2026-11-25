@@ -5,7 +5,7 @@ import { About } from "@/sections/About";
 export const metadata: Metadata = {
   title: "Sobre",
   description:
-    "Conheça a atuação da Tecnofusi em fundição de alumínio coquilhado, ferramentas especiais, apoio técnico e Loja Tecnofusi."
+    "Conheça a história, a estrutura e a atuação industrial da Tecnofusi em fundição de alumínio."
 };
 
 export default function SobrePage() {
@@ -14,7 +14,7 @@ export default function SobrePage() {
       <PageHero
         eyebrow="Empresa"
         title="Sobre a Tecnofusi"
-        description="Somos uma indústria de fundição de alumínio coquilhado especializada no desenvolvimento de componentes sob demanda para diversos setores e ferramentas para motocicletas. Nosso diferencial é a unidade de usinagem integrada ao grupo, que acelera a produção e garante rigor técnico. Unimos essa capacidade fabril a uma operação de revenda online, atendendo com eficiência o mercado B2B e o consumidor final."
+        description="Somos uma indústria de fundição de alumínio coquilhado especializada em peças industriais sob demanda. Avaliamos cada projeto conforme a aplicação e integramos usinagem complementar quando necessário."
       />
       <About />
     </main>

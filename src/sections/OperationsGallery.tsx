@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Building2, Factory, Wrench } from "lucide-react";
+import { Building2, Factory, Cog } from "lucide-react";
 
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { HighlightedText } from "@/components/HighlightedText";
@@ -23,12 +23,12 @@ const photos = [
     icon: Building2
   },
   {
-    title: "Loja Tecnofusi",
+    title: "Usinagem complementar",
     description:
-      "Canais oficiais para venda online, marketplaces e itens de revenda comercializados pela loja.",
-    src: "/images/site/revenda-motocicletas.jpg",
-    alt: "Motocicleta e painel de ferramentas para representar a Loja Tecnofusi",
-    icon: Wrench
+      "Apoio de acabamento e ajuste dimensional para peças fundidas, quando previsto no projeto.",
+    src: "/images/site/servico-usinagem.png",
+    alt: "Equipamento de usinagem utilizado como apoio complementar",
+    icon: Cog
   }
 ];
 
@@ -39,8 +39,8 @@ export function OperationsGallery() {
         <AnimatedSection>
           <SectionHeading
             eyebrow="Visão geral"
-            title="Quem somos, onde estamos e como vendemos."
-            description="Uma apresentação direta da operação: produção em alumínio coquilhado, estrutura própria e canais oficiais da Loja Tecnofusi."
+            title="Nossa operação industrial."
+            description="Conheça a produção em alumínio coquilhado, a estrutura da empresa e o apoio complementar de usinagem."
           />
         </AnimatedSection>
 

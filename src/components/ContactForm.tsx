@@ -1,67 +1,50 @@
 "use client";
 
-import { Send } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { FormEvent } from "react";
 import { siteConfig } from "@/lib/site";
 import { trackWhatsAppConversion } from "@/utils/tracking";
+
+const inputClass = "focus-ring rounded-2xl border border-white/10 bg-graphite-950/70 px-4 py-3 text-white outline-none placeholder:text-metal-500 focus:border-brand-bright";
 
 export function ContactForm() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    const nome = String(data.get("nome") || "");
-    const email = String(data.get("email") || "");
-    const telefone = String(data.get("telefone") || "");
-    const assunto = String(data.get("assunto") || "");
-    const mensagem = String(data.get("mensagem") || "");
-    const text = [
-      "Olá, equipe Tecnofusi.",
+    const field = (name: string) => String(data.get(name) || "").trim();
+    const message = [
+      "Olá, gostaria de solicitar um orçamento para fundição de uma peça em alumínio.",
       "",
-      "Estou entrando em contato pelo site e gostaria de solicitar atendimento.",
+      "*Dados para contato*",
+      `Nome: ${field("nome")}`,
+      `Empresa: ${field("empresa")}`,
+      `E-mail: ${field("email")}`,
+      `Telefone: ${field("telefone")}`,
+      `Cidade/estado: ${field("cidadeEstado")}`,
       "",
-      `Nome: ${nome}`,
-      `E-mail: ${email}`,
-      `Telefone: ${telefone || "Não informado"}`,
-      `Assunto: ${assunto}`,
-      "",
-      "Descrição da demanda:",
-      mensagem
+      "*Projeto*",
+      `Descrição da peça ou projeto: ${field("descricao")}`,
+      `Quantidade estimada: ${field("quantidade") || "Não informada"}`
     ].join("\n");
-    const whatsappUrl = new URL(siteConfig.whatsappHref);
-
-    whatsappUrl.searchParams.set("text", text);
+    const url = new URL(siteConfig.whatsappHref);
+    url.searchParams.set("text", message);
     trackWhatsAppConversion();
-    window.open(whatsappUrl.toString(), "_blank", "noopener,noreferrer");
+    window.location.assign(url.toString());
   }
 
   return (
     <form onSubmit={handleSubmit} className="premium-border rounded-[28px] bg-white/[0.055] p-5 shadow-premium backdrop-blur-xl sm:p-7">
       <div className="grid gap-4 sm:grid-cols-2">
-        <label className="grid gap-2 text-sm font-medium text-metal-100">
-          Nome
-          <input name="nome" required className="focus-ring rounded-2xl border border-white/10 bg-graphite-950/70 px-4 py-3 text-white outline-none transition placeholder:text-metal-500 focus:border-brand-bright" placeholder="Seu nome" />
-        </label>
-        <label className="grid gap-2 text-sm font-medium text-metal-100">
-          E-mail
-          <input name="email" type="email" required className="focus-ring rounded-2xl border border-white/10 bg-graphite-950/70 px-4 py-3 text-white outline-none transition placeholder:text-metal-500 focus:border-brand-bright" placeholder="voce@empresa.com" />
-        </label>
-        <label className="grid gap-2 text-sm font-medium text-metal-100">
-          Telefone
-          <input name="telefone" className="focus-ring rounded-2xl border border-white/10 bg-graphite-950/70 px-4 py-3 text-white outline-none transition placeholder:text-metal-500 focus:border-brand-bright" placeholder="(00) 00000-0000" />
-        </label>
-        <label className="grid gap-2 text-sm font-medium text-metal-100">
-          Assunto
-          <input name="assunto" required className="focus-ring rounded-2xl border border-white/10 bg-graphite-950/70 px-4 py-3 text-white outline-none transition placeholder:text-metal-500 focus:border-brand-bright" placeholder="Orçamento, projeto ou dúvida" />
-        </label>
+        <label className="grid gap-2 text-sm font-medium text-metal-100">Nome<input name="nome" required maxLength={120} className={inputClass} /></label>
+        <label className="grid gap-2 text-sm font-medium text-metal-100">Empresa<input name="empresa" required maxLength={120} className={inputClass} /></label>
+        <label className="grid gap-2 text-sm font-medium text-metal-100">E-mail<input name="email" type="email" required maxLength={160} className={inputClass} /></label>
+        <label className="grid gap-2 text-sm font-medium text-metal-100">Telefone<input name="telefone" type="tel" required maxLength={30} className={inputClass} /></label>
+        <label className="grid gap-2 text-sm font-medium text-metal-100">Cidade/estado<input name="cidadeEstado" required maxLength={120} className={inputClass} /></label>
+        <label className="grid gap-2 text-sm font-medium text-metal-100">Quantidade estimada (opcional)<input name="quantidade" type="number" min="1" className={inputClass} /></label>
       </div>
-      <label className="mt-4 grid gap-2 text-sm font-medium text-metal-100">
-        Mensagem
-        <textarea name="mensagem" required rows={5} className="focus-ring resize-none rounded-2xl border border-white/10 bg-graphite-950/70 px-4 py-3 text-white outline-none transition placeholder:text-metal-500 focus:border-brand-bright" placeholder="Conte o que você precisa desenvolver ou fundir." />
-      </label>
-      <button className="focus-ring mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-brand-bright px-5 text-sm font-semibold text-white shadow-redGlow transition duration-300 hover:-translate-y-0.5 hover:bg-brand-soft sm:w-auto" type="submit">
-        Enviar mensagem
-        <Send className="h-4 w-4" />
-      </button>
+      <label className="mt-4 grid gap-2 text-sm font-medium text-metal-100">Descrição da peça ou projeto<textarea name="descricao" required maxLength={5000} rows={5} className={`${inputClass} resize-y`} /></label>
+      <p className="mt-4 text-xs leading-5 text-metal-300">Se tiver um desenho técnico, você poderá anexá-lo na conversa. Confira a mensagem antes de enviá-la pelo WhatsApp.</p>
+      <button className="focus-ring mt-5 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-brand-bright px-5 text-sm font-semibold text-white transition hover:bg-brand-soft" type="submit">Continuar no WhatsApp<MessageCircle className="h-4 w-4" /></button>
     </form>
   );
 }

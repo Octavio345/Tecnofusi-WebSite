@@ -54,7 +54,7 @@ export function Contact() {
                 Redes sociais
               </p>
               <p className="mt-2 text-sm leading-7 text-metal-300">
-                Acompanhe os canais oficiais da empresa e da loja.
+                Acompanhe os canais institucionais da Tecnofusi.
               </p>
               <SocialLinks className="mt-5" />
             </div>

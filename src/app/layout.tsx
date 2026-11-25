@@ -22,26 +22,22 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Tecnofusi | Fundição de alumínio e ferramentas especiais",
+    default: "Tecnofusi | Fundição de alumínio para peças industriais",
     template: "%s | Tecnofusi"
   },
   description:
-    "Tecnofusi: fundição de alumínio coquilhado, ferramentas especiais, apoio técnico complementar e Loja Tecnofusi.",
+    siteConfig.description,
   keywords: [
     "Tecnofusi",
     "fundição de alumínio coquilhado",
     "fundição de alumínio",
-    "Loja Tecnofusi",
-    "ferramentas para motocicletas em revenda",
-    "itens de revenda",
-    "ferramentas especiais",
-    "venda online Tecnofusi",
+    "peças industriais sob demanda",
+    "usinagem complementar",
     "Santa Bárbara D'Oeste"
   ],
   openGraph: {
-    title: "Tecnofusi | Fundição e ferramentas especiais",
-    description:
-      "Fundição de alumínio coquilhado, ferramentas especiais, apoio técnico complementar e Loja Tecnofusi.",
+    title: "Tecnofusi | Fundição de alumínio para peças industriais",
+    description: siteConfig.description,
     url: siteConfig.url,
     siteName: "Tecnofusi",
     locale: "pt_BR",
@@ -57,9 +53,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tecnofusi | Fundição e ferramentas especiais",
-    description:
-      "Fundição de alumínio coquilhado, ferramentas especiais, apoio técnico complementar e Loja Tecnofusi.",
+    title: "Tecnofusi | Fundição de alumínio para peças industriais",
+    description: siteConfig.description,
     images: ["/images/tecnofusi-logo.png"]
   },
   alternates: {

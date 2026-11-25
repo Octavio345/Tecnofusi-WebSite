@@ -13,7 +13,7 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-5 max-w-md text-sm leading-7 text-metal-300">
-              <HighlightedText text="Atuação industrial em alumínio e ferramentas especiais, com suporte técnico, prazo e canais comerciais oficiais." />
+              <HighlightedText text="Fundição de alumínio coquilhado para peças industriais sob demanda, com apoio técnico em cada projeto." />
             </p>
             <SocialLinks className="mt-6" />
           </div>

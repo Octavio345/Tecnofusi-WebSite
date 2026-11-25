@@ -29,12 +29,12 @@ const topics = [
   {
     icon: ListChecks,
     title: "Serviços e Produtos",
-    points: ["Fundição de alumínio", "Usinagem complementar", "Loja e marketplaces"]
+    points: ["Fundição de alumínio", "Peças sob demanda", "Usinagem complementar"]
   },
   {
     icon: MessageCircle,
     title: "Perguntas Frequentes",
-    points: ["Orçamentos", "Prazos e disponibilidade", "Projetos sob demanda"]
+    points: ["Orçamentos", "Análise técnica", "Projetos sob demanda"]
   }
 ];
 
