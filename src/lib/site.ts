@@ -57,8 +57,8 @@ export const services = [
     description:
       "Produção de peças em alumínio coquilhado para demandas industriais sob medida, com controle técnico e repetibilidade.",
     image: {
-      src: "/images/site/servico-fundicao.png",
-      alt: "Registro da produção de alumínio da Tecnofusi"
+      src: "/images/fundicao/servico-fundicao-8677.jpg",
+      alt: "Alumínio sendo vazado em molde na fundição da Tecnofusi"
     },
     bullets: ["Alumínio coquilhado", "Produção técnica", "Qualidade uniforme"],
     details:

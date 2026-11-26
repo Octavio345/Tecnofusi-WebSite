@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { AnimatedSection } from "@/components/AnimatedSection";
 import { Button } from "@/components/Button";
 import { SectionHeading } from "@/components/SectionHeading";
 import { siteConfig } from "@/lib/site";
@@ -26,11 +27,6 @@ const steps = [
 
 const photos = [
   {
-    src: "/images/fundicao/aluminio-preparado.jpg",
-    alt: "Alumínio preparado junto à área de fundição da Tecnofusi",
-    caption: "Preparação do alumínio"
-  },
-  {
     src: "/images/fundicao/vazamento-aluminio.jpg",
     alt: "Vazamento do alumínio na operação de fundição da Tecnofusi",
     caption: "Fundição em operação"
@@ -39,6 +35,11 @@ const photos = [
     src: "/images/fundicao/acabamento-peca.jpg",
     alt: "Acabamento manual de uma peça de alumínio na Tecnofusi",
     caption: "Acabamento da peça"
+  },
+  {
+    src: "/images/fundicao/aluminio-fundido-empilhado.jpg",
+    alt: "Alumínio fundido empilhado na unidade da Tecnofusi",
+    caption: "Alumínio após a fundição"
   }
 ];
 
@@ -46,15 +47,15 @@ export default function FundicaoDeAluminioPage() {
   return (
     <main className="bg-graphite-950 pt-[var(--header-height)]">
       <section className="container-premium grid gap-8 py-14 lg:grid-cols-2 lg:items-center lg:py-20">
-        <div>
+        <AnimatedSection as="div">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-soft">Fundição industrial</p>
           <h1 className="mt-4 text-4xl font-semibold leading-tight text-white sm:text-5xl">Fundição de alumínio para peças industriais sob demanda</h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-metal-300">Fabricamos peças em alumínio coquilhado a partir de desenhos ou projetos técnicos, com avaliação da aplicação e das necessidades de cada cliente.</p>
           <div className="mt-8"><Button href={siteConfig.whatsappHref} external>Solicitar orçamento</Button></div>
-        </div>
-        <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] bg-graphite-900">
-          <Image src="/images/site/servico-fundicao.png" alt="Fundição de alumínio na operação industrial da Tecnofusi" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain" />
-        </div>
+        </AnimatedSection>
+        <AnimatedSection as="div" className="relative aspect-[4/3] overflow-hidden rounded-[24px] bg-graphite-900">
+          <Image src="/images/fundicao/forno-lingotes-tratado.png" alt="Forno industrial com peças de alumínio fundido na Tecnofusi" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+        </AnimatedSection>
       </section>
 
       <section className="bg-graphite-900 py-14 lg:py-20">
